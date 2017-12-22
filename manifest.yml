@@ -1,3 +1,8 @@
+---
+declared-services:
+  visual-recognition-wws:
+    label: watson_vision_combined
+    plan: Free
 applications:
 - name: watson-waste-sorter
   memory: 256M
@@ -6,3 +11,5 @@ applications:
   buildpack: python_buildpack
   path: .
   instances: 2
+  services:
+  - visual-recognition-wws

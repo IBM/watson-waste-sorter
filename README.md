@@ -3,6 +3,9 @@
 
 # To Use
 
+First provision a Free tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition) 
+Service and name it `visual-recognition-wws`.
+
 ## On Cloud Foundry
 ```
 cf push
