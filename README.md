@@ -15,3 +15,8 @@ cf push
 ```
 python run.py
 ```
+
+## Backend API usage
+
+Do a Post request at `https://watson-waste-sorter.mybluemix.net/api/sort` with the image as the parameter. 
+Return value should be in JSON.
