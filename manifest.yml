@@ -6,10 +6,9 @@ declared-services:
 applications:
 - name: watson-waste-sorter
   memory: 256M
-  command: python run.py
   domain: mybluemix.net
   buildpack: python_buildpack
   path: .
-  instances: 2
+  instances: 1
   services:
   - visual-recognition-wws

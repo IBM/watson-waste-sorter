@@ -18,5 +18,21 @@ python run.py
 
 ## Backend API usage
 
-Do a Post request at `https://watson-waste-sorter.mybluemix.net/api/sort` with the image as the parameter. 
+Do a POST request at `https://watson-waste-sorter.mybluemix.net/api/sort` with the image as the parameter. 
 Return value should be in JSON.
+
+Example in Bash:
+
+Input: png/jpg/jpeg file
+```
+curl -X POST -F "images_file=@fruitbowl.jpg" "https://watson-waste-sorter.mybluemix.net/api/sort"
+```
+
+Output: 
+```
+{
+status code: 200,
+result: landfill,
+accuracy rate: 90
+}
+```
