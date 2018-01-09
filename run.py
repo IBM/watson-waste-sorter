@@ -20,16 +20,12 @@ def sort():
     #sample parameter json
     #{ "classifier_ids": ["watson-waste-sorter-classifier-id"]}
     url_result = visual_recognition.classify(parameters=json.dumps({'url': sampleImageUrl}))
-    print(json.dumps(url_result, indent=2))
-    return ''
+    # print(json.dumps(url_result, indent=2))
+    return json.dumps({"status code": 200, "result" : "landfill", "accuracy rate": 90})
 
 # Default frontend page.
 @app.route('/')
 def default():
-    try:
-        print(request.headers)
-    except:
-        pass
     return ''
     
 
