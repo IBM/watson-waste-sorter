@@ -25,14 +25,10 @@ Example in Bash:
 
 Input: png/jpg/jpeg file
 ```
-curl -X POST -F "images_file=@fruitbowl.jpg" "https://watson-waste-sorter.mybluemix.net/api/sort"
+curl -X POST -F "images_file=@plastic_fork.jpg" "https://watson-waste-sorter.mybluemix.net/api/sort"
 ```
 
 Output: 
 ```
-{
-status code: 200,
-result: landfill,
-accuracy rate: 90
-}
+{"status code": 200, "result": "landfill", "accuracy rate": 0.908}
 ```
