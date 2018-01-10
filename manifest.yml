@@ -2,7 +2,7 @@
 declared-services:
   visual-recognition-wws:
     label: watson_vision_combined
-    plan: Free
+    plan: free
 applications:
 - name: watson-waste-sorter
   memory: 256M
