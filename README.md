@@ -36,7 +36,7 @@ curl -X POST -F "images_file=@plastic_fork.jpg" "https://watson-waste-sorter.myb
 
 Output: 
 ```
-{"status code": 200, "result": "landfill", "accuracy rate": 0.908}
+{"confident score": 0.547405, "status code": 200, "result": "recycle"}
 ```
 
 ## Privacy Notice

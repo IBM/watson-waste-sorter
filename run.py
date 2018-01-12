@@ -12,8 +12,17 @@ logging.basicConfig(level=logging.FATAL)
 port = os.getenv('VCAP_APP_PORT', '5000')
 
 # Global variables for credentials
-url = ''
 apikey = ''
+classifier_id = ''
+
+
+# Set Classifier ID
+def set_classifier():
+    visual_recognition = VisualRecognitionV3('2016-05-20', api_key=apikey)
+    classifiers = visual_recognition.list_classifiers()
+    for classifier in classifiers['classifiers']:
+        if classifier['name'] == 'Trash' and classifier['status'] == 'ready':
+            return classifier['classifier_id']
 
 
 # API destination
@@ -22,9 +31,16 @@ def sort():
     try:
         images_file = request.files.get('images_file', '')
         visual_recognition = VisualRecognitionV3('2016-05-20', api_key=apikey)
-        # sample parameter json
-        # { "classifier_ids": ["watson-waste-sorter-classifier-id"]}
-        url_result = visual_recognition.classify(images_file=images_file)
+        if classifier_id == '':
+            global classifier_id
+            classifier_id = set_classifier()
+            if classifier_id == '':
+                return json.dumps(
+                    {"status code": 500, "result": "classifier not ready",
+                        "confident score": 0})
+        parameters = json.dumps({'classifier_ids': [classifier_id]})
+        url_result = visual_recognition.classify(images_file=images_file,
+                                                 parameters=parameters)
         list_of_result = url_result["images"][0]["classifiers"][0]["classes"]
         result_class = ''
         result_score = 0
@@ -34,10 +50,11 @@ def sort():
                 result_class = result["class"]
         return json.dumps(
             {"status code": 200, "result": result_class,
-                "accuracy rate": result_score})
+                "confident score": result_score})
     except Exception:
         return json.dumps(
-            {"status code": 500, "result": "Not an image", "accuracy rate": 0})
+            {"status code": 500, "result": "Not an image",
+                "confident score": 0})
 
 
 # Default frontend page.
@@ -49,7 +66,7 @@ def default():
 if __name__ == "__main__":
     visual_creds = watson_service.load_from_vcap_services(
         'watson_vision_combined')
-    url = visual_creds['url']
+    global apikey
     apikey = visual_creds['api_key']
     metrics_tracker_client.track()
     app.run(host='0.0.0.0', port=int(port))
