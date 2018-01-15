@@ -20,6 +20,10 @@
 * Mobile: Systems of engagement are increasingly using mobile technology as the platform for delivery.
 * [Flask](http://flask.pocoo.org/): A micro webdevelopment framework for Python.
 
+# Prerequisite
+
+Create an [IBM Cloud account](https://console.bluemix.net/registration/) and install the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) on your machine.
+
 ## Deploy the Server Application to IBM Cloud
 
 [![Deploy to IBM Cloud](https://metrics-tracker.mybluemix.net/stats/a9da622b1e6fbfdc883c6a1c0ca2e171/button.svg)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/watson-waste-sorter)
@@ -28,20 +32,46 @@
 
 ## 1. Create your custom visual recognition model.
 
-First, provision a Free tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition) 
-Service and name it `visual-recognition-wws`.
+First, we need to login to the Cloud Foundry CLI.
+```shell
+cf login -a https://api.ng.bluemix.net # Please use a different API endpoint if your IBM Cloud account is not in US-South
+```
 
-After you provision the Visual Recognition service, create a new credential under the **Service credentials** tab on the right side of the Web UI. Now, you should see the `api_key` for the service. Use it to access the [Visual Recognition Tool](https://watson-visual-recognition.ng.bluemix.net/) Web UI and create your own custom visual recognition model.
+Next, provision a Free tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition) 
+Service and name it `visual-recognition-wws`. You can provision it using the above link or the command below.
+```shell
+cf create-service watson_vision_combined free visual-recognition-wws
+```
+
+### Create custom model via Web UI
+
+After you provision the Visual Recognition service, create a new credential under the **Service credentials** tab on the left side of the Web UI. Now, you should see the `api_key` for the service. Use it to access the [Visual Recognition Tool](https://watson-visual-recognition.ng.bluemix.net/) Web UI and create your own custom visual recognition model.
 
 In the Visual Recognition Tool, click **Create classifier**. Then, upload the zipped image files from *server/resources* to the corresponding class as shown below. Make sure you name your classifier ``waste`` and the three classes should be ``Landfill``, ``Recycle``, and ``Compost``. (All the names should be case sensitive)
 
 ![custom-model](docs/custom-model.png)
 
-Click **Create** after you uploaded all the files to the corresponding class. Now the visual recognition should start training the new custom model. The training process should takes about 20 to 30 minutes, so you can start deploying the server and mobile app while waiting for it.
+Click **Create** after you uploaded all the files to the corresponding class. Now the visual recognition should start training the new custom model. The training process should take about 20 to 30 minutes, so you can start deploying the server and mobile app while waiting for it.
+
+### Create custom model via command line
+
+After you provision the Visual Recognition service, run the following command to create your Visual Recognition API KEY
+```shell
+cf create-service-key visual-recognition-wws waste-sorter
+API_KEY=$(cf service-key visual-recognition-wws waste-sorter | awk ' /api_key/ {print $2;exit}' | tr -d "\",")
+```
+
+Now go to the server directory. Let's create our custom model using the sample zipped image files we have under server/resources
+```shell
+cd server
+echo $API_KEY # Make sure your API_KEY is not empty
+curl -X POST -F "Landfill_positive_examples=@resources/Landfill.zip" -F "Recycle_positive_examples=@resources/Recycle.zip" -F "Compost_positive_examples=@resources/Compost.zip" -F "negative_examples=@resources/Negative.zip" -F "name=waste" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers?api_key=$API_KEY&version=2016-05-20"
+```
+
 
 ## 2. Deploy the server application
 
-Now, go to the server repository and push the application to Cloud Foundry
+Now in server repository, push the application to Cloud Foundry
 ```
 cf push
 ```
@@ -55,12 +85,12 @@ Example in Bash:
 
 Input: png/jpg/jpeg file
 ```
-curl -X POST -F "images_file=@plastic_fork.jpg" "https://watson-waste-sorter.mybluemix.net/api/sort"
+curl -X POST -F "images_file=@server/plastic_fork.jpg" "https://watson-waste-sorter.mybluemix.net/api/sort"
 ```
 
 Output: 
 ```
-{"confident score": 0.547405, "status code": 200, "result": "recycle"}
+{"confident score": 0.547405, "status code": 200, "result": "Recycle"}
 ```
 
 
