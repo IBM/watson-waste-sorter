@@ -33,7 +33,7 @@ Service and name it `visual-recognition-wws`.
 
 After you provision the Visual Recognition service, create a new credential under the **Service credentials** tab on the right side of the Web UI. Now, you should see the `api_key` for the service. Use it to access the [Visual Recognition Tool](https://watson-visual-recognition.ng.bluemix.net/) Web UI and create your own custom visual recognition model.
 
-In the Visual Recognition Tool, click **Create classifier**. Then, upload the zipped image files from *server/resources* to the corresponding class as shown below. 
+In the Visual Recognition Tool, click **Create classifier**. Then, upload the zipped image files from *server/resources* to the corresponding class as shown below. Make sure you name your classifier ``waste`` and the three classes should be ``Landfill``, ``Recycle``, and ``Compost``. (All the names should be case sensitive)
 
 ![custom-model](docs/custom-model.png)
 
