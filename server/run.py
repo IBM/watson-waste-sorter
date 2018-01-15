@@ -21,7 +21,7 @@ def set_classifier():
     visual_recognition = VisualRecognitionV3('2016-05-20', api_key=apikey)
     classifiers = visual_recognition.list_classifiers()
     for classifier in classifiers['classifiers']:
-        if classifier['name'] == 'Trash' and classifier['status'] == 'ready':
+        if classifier['name'] == 'waste' and classifier['status'] == 'ready':
             return classifier['classifier_id']
 
 

@@ -4,9 +4,21 @@
 # watson-waste-sorter
 ***Work in progress***
 
+## Flow
+
+1. User interacts with the mobile app and captures an image.
+2. The image on the mobile phone is passed to the server application running in the cloud.
+3. The server sends the image to Watson Visual Recognition Service for analysis and sends back the classification result to the mobile app.
+4. Visual Recognition service classifies the image and returns the information to the server.
+
 ## Included components
 
 * [Watson Visual Recognition](https://www.ibm.com/watson/developercloud/visual-recognition.html): Visual Recognition understands the contents of images - visual concepts tag the image, find human faces, approximate age and gender, and find similar images in a collection.
+
+## Featured Technologies
+
+* Mobile: Systems of engagement are increasingly using mobile technology as the platform for delivery.
+* [Flask](http://flask.pocoo.org/): A micro webdevelopment framework for Python.
 
 ## Deploy the Server Application to IBM Cloud
 
@@ -60,7 +72,7 @@ This data is collected from the `setup.py` and `repository.yaml` file in the sam
 
 ## Disabling Deployment Tracking
 
-To disable tracking, simply remove ``metrics_tracker_client.track()`` from the ``run.py`` file in the top level directory.
+To disable tracking, simply remove ``metrics_tracker_client.track()`` from the ``run.py`` file in the server directory.
 
 # License
 
