@@ -8,4 +8,4 @@ install:
 before_script:
   - flake8 server
 script:
-  - pytest --cov=server
+  - pytest
