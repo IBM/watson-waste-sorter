@@ -4,9 +4,21 @@
 # watson-waste-sorter
 ***Work in progress***
 
+## Flow
+
+1. User interacts with the mobile app and captures an image.
+2. The image on the mobile phone is passed to the server application running in the cloud.
+3. The server sends the image to Watson Visual Recognition Service for analysis and sends back the classification result to the mobile app.
+4. Visual Recognition service classifies the image and returns the information to the server.
+
 ## Included components
 
 * [Watson Visual Recognition](https://www.ibm.com/watson/developercloud/visual-recognition.html): Visual Recognition understands the contents of images - visual concepts tag the image, find human faces, approximate age and gender, and find similar images in a collection.
+
+## Featured Technologies
+
+* Mobile: Systems of engagement are increasingly using mobile technology as the platform for delivery.
+* [Flask](http://flask.pocoo.org/): A micro webdevelopment framework for Python.
 
 ## Deploy the Server Application to IBM Cloud
 
@@ -14,10 +26,22 @@
 
 # Steps
 
-First provision a Free tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition) 
+## 1. Create your custom visual recognition model.
+
+First, provision a Free tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition) 
 Service and name it `visual-recognition-wws`.
 
-Then, push the application to Cloud Foundry
+After you provision the Visual Recognition service, create a new credential under the **Service credentials** tab on the right side of the Web UI. Now, you should see the `api_key` for the service. Use it to access the [Visual Recognition Tool](https://watson-visual-recognition.ng.bluemix.net/) Web UI and create your own custom visual recognition model.
+
+In the Visual Recognition Tool, click **Create classifier**. Then, upload the zipped image files from *server/resources* to the corresponding class as shown below. Make sure you name your classifier ``waste`` and the three classes should be ``Landfill``, ``Recycle``, and ``Compost``. (All the names should be case sensitive)
+
+![custom-model](docs/custom-model.png)
+
+Click **Create** after you uploaded all the files to the corresponding class. Now the visual recognition should start training the new custom model. The training process should takes about 20 to 30 minutes, so you can start deploying the server and mobile app while waiting for it.
+
+## 2. Deploy the server application
+
+Now, go to the server repository and push the application to Cloud Foundry
 ```
 cf push
 ```
@@ -36,8 +60,11 @@ curl -X POST -F "images_file=@plastic_fork.jpg" "https://watson-waste-sorter.myb
 
 Output: 
 ```
-{"status code": 200, "result": "landfill", "accuracy rate": 0.908}
+{"confident score": 0.547405, "status code": 200, "result": "recycle"}
 ```
+
+
+# Troubleshooting
 
 ## Privacy Notice
 
@@ -60,7 +87,7 @@ This data is collected from the `setup.py` and `repository.yaml` file in the sam
 
 ## Disabling Deployment Tracking
 
-To disable tracking, simply remove ``metrics_tracker_client.track()`` from the ``run.py`` file in the top level directory.
+To disable tracking, simply remove ``metrics_tracker_client.track()`` from the ``run.py`` file in the server directory.
 
 # License
 
