@@ -41,7 +41,7 @@ Click **Create** after you uploaded all the files to the corresponding class. No
 
 ## 2. Deploy the server application
 
-Then, push the application to Cloud Foundry
+Now, go to the server repository and push the application to Cloud Foundry
 ```
 cf push
 ```
