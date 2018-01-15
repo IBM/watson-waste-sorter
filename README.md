@@ -26,8 +26,20 @@
 
 # Steps
 
-First provision a Free tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition) 
+## 1. Create your custom visual recognition model.
+
+First, provision a Free tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition) 
 Service and name it `visual-recognition-wws`.
+
+After you provision the Visual Recognition service, create a new credential under the **Service credentials** tab on the right side of the Web UI. Now, you should see the `api_key` for the service. Use it to access the [Visual Recognition Tool](https://watson-visual-recognition.ng.bluemix.net/) Web UI and create your own custom visual recognition model.
+
+In the Visual Recognition Tool, click **Create classifier**. Then, upload the zipped image files from *server/resources* to the corresponding class as shown below. 
+
+![custom-model](docs/custom-model.png)
+
+Click **Create** after you uploaded all the files to the corresponding class. Now the visual recognition should start training the new custom model. The training process should takes about 20 to 30 minutes, so you can start deploying the server and mobile app while waiting for it.
+
+## 2. Deploy the server application
 
 Then, push the application to Cloud Foundry
 ```
@@ -50,6 +62,9 @@ Output:
 ```
 {"confident score": 0.547405, "status code": 200, "result": "recycle"}
 ```
+
+
+# Troubleshooting
 
 ## Privacy Notice
 
