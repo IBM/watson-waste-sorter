@@ -76,7 +76,9 @@ Now in the server repository, push the application to Cloud Foundry
 cf push
 ```
 
-If the deployment is success, your backend server should be running and able to classify the different kind of waste once the model is finish training. Now let's go ahead and create our mobile app to use this classifier.
+If the deployment is success, your backend server should be running and able to classify the different kind of waste once the model finish training. Now let's go ahead and create our mobile app to use this classifier.
+
+## 3. Create the mobile application and connect it with the server
 
 ## Backend API usage
 
