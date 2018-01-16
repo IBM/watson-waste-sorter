@@ -4,6 +4,13 @@
 # watson-waste-sorter
 ***Work in progress***
 
+In this developer code pattern, we will create a mobile app, Python Server with Flask, and Watson Visual Recognition. This mobile app sends pictures of waste and garbage to be analyzed by a server app, using Watson Visual Recognition. The server application will use pictures of common trash to train Watson Visual Recognition to identify various catagories of waste, i.e. recycle, compost, or landfill. A developer can leverage this to create their own custom Visual Recognition classifiers for their use cases.
+
+When the reader has completed this Code Pattern, they will understand how to:
+- Create a Python server with Flask that can utilize the Watson Visual Recognition service for classifying images.
+- Create a Visual Recognition custom classifier using the Web UI or command line.
+- Create a mobile application that can send pictures to a server app for classification using Visual Recognition.
+
 ## Flow
 
 1. User interacts with the mobile app and captures an image.
@@ -58,7 +65,7 @@ Click **Create** after you uploaded all the files to the corresponding class. No
 After you provision the Visual Recognition service, run the following command to create your Visual Recognition API KEY
 ```shell
 cf create-service-key visual-recognition-wws waste-sorter
-API_KEY=$(cf service-key visual-recognition-wws waste-sorter | awk ' /api_key/ {print $2;exit}' | tr -d "\",")
+API_KEY=$(cf service-key visual-recognition-wws waste-sorter --guid)
 ```
 
 Now go to the server directory. Let's create our custom model using the sample zipped image files we have under server/resources
