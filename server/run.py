@@ -23,6 +23,7 @@ def set_classifier():
     for classifier in classifiers['classifiers']:
         if classifier['name'] == 'waste' and classifier['status'] == 'ready':
             return classifier['classifier_id']
+    return ''
 
 
 # API destination
