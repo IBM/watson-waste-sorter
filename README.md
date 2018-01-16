@@ -65,7 +65,7 @@ Now go to the server directory. Let's create our custom model using the sample z
 ```shell
 cd server
 echo $API_KEY # Make sure your API_KEY is not empty
-curl -X POST -F "Landfill_positive_examples=@resources/Landfill.zip" -F "Recycle_positive_examples=@resources/Recycle.zip" -F "Compost_positive_examples=@resources/Compost.zip" -F "negative_examples=@resources/Negative.zip" -F "name=waste" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers?api_key=$API_KEY&version=2016-05-20"
+curl -X POST -F "Landfill_positive_examples=@resources/landfill.zip" -F "Recycle_positive_examples=@resources/recycle.zip" -F "Compost_positive_examples=@resources/compost.zip" -F "negative_examples=@resources/negative.zip" -F "name=waste" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers?api_key=$API_KEY&version=2016-05-20"
 ```
 
 
