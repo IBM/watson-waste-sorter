@@ -71,10 +71,12 @@ curl -X POST -F "Landfill_positive_examples=@resources/Landfill.zip" -F "Recycle
 
 ## 2. Deploy the server application
 
-Now in server repository, push the application to Cloud Foundry
+Now in the server repository, push the application to Cloud Foundry
 ```
 cf push
 ```
+
+If the deployment is success, your backend server should be running and able to classify the different kind of waste once the model is finish training. Now let's go ahead and create our mobile app to use this classifier.
 
 ## Backend API usage
 
