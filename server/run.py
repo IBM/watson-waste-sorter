@@ -23,7 +23,6 @@ def set_classifier():
     for classifier in classifiers['classifiers']:
         if classifier['name'] == 'waste' and classifier['status'] == 'ready':
             return classifier['classifier_id']
-    return ''
 
 
 # API destination
@@ -32,16 +31,21 @@ def sort():
     try:
         images_file = request.files.get('images_file', '')
         visual_recognition = VisualRecognitionV3('2016-05-20', api_key=apikey)
+        global classifier_id
         if classifier_id == '':
-            global classifier_id
             classifier_id = set_classifier()
             if classifier_id == '':
                 return json.dumps(
-                    {"status code": 500, "result": "classifier not ready",
+                    {"status code": 500, "result": "Classifier not ready",
                         "confident score": 0})
         parameters = json.dumps({'classifier_ids': [classifier_id]})
         url_result = visual_recognition.classify(images_file=images_file,
                                                  parameters=parameters)
+        if len(url_result["images"][0]["classifiers"]) < 1:
+            return json.dumps(
+                    {"status code": 500, "result": "Image is either not "
+                        "a waste or it's too blurry, please try it again.",
+                        "confident score": 0})
         list_of_result = url_result["images"][0]["classifiers"][0]["classes"]
         result_class = ''
         result_score = 0
@@ -67,7 +71,6 @@ def default():
 if __name__ == "__main__":
     visual_creds = watson_service.load_from_vcap_services(
         'watson_vision_combined')
-    global apikey
     apikey = visual_creds['api_key']
     metrics_tracker_client.track()
     app.run(host='0.0.0.0', port=int(port))

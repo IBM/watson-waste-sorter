@@ -11,6 +11,8 @@ When the reader has completed this Code Pattern, they will understand how to:
 - Create a Visual Recognition custom classifier using the Web UI or command line.
 - Create a mobile application that can send pictures to a server app for classification using Visual Recognition.
 
+![artitecture_diagram](docs/artitecture_diagram.png)
+
 ## Flow
 
 1. User interacts with the mobile app and captures an image.
@@ -78,12 +80,12 @@ curl -X POST -F "Landfill_positive_examples=@resources/landfill.zip" -F "Recycle
 
 ## 2. Deploy the server application
 
-Now in the server repository, push the application to Cloud Foundry
+Now in the server repository, push your server application to Cloud Foundry
 ```
 cf push
 ```
 
-If the deployment is success, your backend server should be running and able to classify the different kind of waste once the model finish training. Now let's go ahead and create our mobile app to use this classifier.
+Once the deployment is success, your backend server should be running on the cloud and able to classify the different kind of waste once the model finish training. Now let's go ahead and create our mobile app to use this classifier.
 
 ## 3. Create the mobile application and connect it with the server
 
