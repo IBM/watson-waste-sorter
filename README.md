@@ -11,7 +11,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 - Create a Visual Recognition custom classifier using the Web UI or command line.
 - Create a mobile application that can send pictures to a server app for classification using Visual Recognition.
 
-![artitecture_diagram](docs/artitecture_diagram.png)
+![architecture_diagram](docs/architecture_diagram.png)
 
 ## Flow
 
