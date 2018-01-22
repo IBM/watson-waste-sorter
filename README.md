@@ -4,6 +4,15 @@
 # watson-waste-sorter
 ***Work in progress***
 
+In this developer code pattern, we will create a mobile app, Python Server with Flask, and Watson Visual Recognition. This mobile app sends pictures of waste and garbage to be analyzed by a server app, using Watson Visual Recognition. The server application will use pictures of common trash to train Watson Visual Recognition to identify various catagories of waste, i.e. recycle, compost, or landfill. A developer can leverage this to create their own custom Visual Recognition classifiers for their use cases.
+
+When the reader has completed this Code Pattern, they will understand how to:
+- Create a Python server with Flask that can utilize the Watson Visual Recognition service for classifying images.
+- Create a Visual Recognition custom classifier using the Web UI or command line.
+- Create a mobile application that can send pictures to a server app for classification using Visual Recognition.
+
+![architecture_diagram](docs/architecture_diagram.png)
+
 ## Flow
 
 1. User interacts with the mobile app and captures an image.
@@ -58,7 +67,7 @@ Click **Create** after you uploaded all the files to the corresponding class. No
 After you provision the Visual Recognition service, run the following command to create your Visual Recognition API KEY
 ```shell
 cf create-service-key visual-recognition-wws waste-sorter
-API_KEY=$(cf service-key visual-recognition-wws waste-sorter | awk ' /api_key/ {print $2;exit}' | tr -d "\",")
+API_KEY=$(cf service-key visual-recognition-wws waste-sorter --guid)
 ```
 
 Now go to the server directory. Let's create our custom model using the sample zipped image files we have under server/resources
@@ -71,12 +80,12 @@ curl -X POST -F "Landfill_positive_examples=@resources/landfill.zip" -F "Recycle
 
 ## 2. Deploy the server application
 
-Now in the server repository, push the application to Cloud Foundry
+Now in the server repository, push your server application to Cloud Foundry
 ```
 cf push
 ```
 
-If the deployment is success, your backend server should be running and able to classify the different kind of waste once the model finish training. Now let's go ahead and create our mobile app to use this classifier.
+Once the deployment is success, your backend server should be running on the cloud and able to classify the different kind of waste once the model finish training. Now let's go ahead and create our mobile app to use this classifier.
 
 ## 3. Create the mobile application and connect it with the server
 
