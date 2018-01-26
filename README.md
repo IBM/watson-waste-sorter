@@ -54,13 +54,13 @@ cf create-service watson_vision_combined free visual-recognition-wws
 
 ### Create custom model via Web UI
 
-After you provision the Visual Recognition service, create a new credential under the **Service credentials** tab on the left side of the Web UI. Now, you should see the `api_key` for the service. Use it to access the [Visual Recognition Tool](https://watson-visual-recognition.ng.bluemix.net/) Web UI and create your own custom visual recognition model.
+After you provision the Visual Recognition service, create a new credential under the `Service credentials` tab on the left side of the Web UI. Now, you should see the `api_key` for the service. Use it to access the [Visual Recognition Tool](https://watson-visual-recognition.ng.bluemix.net/) Web UI and create your own custom visual recognition model.
 
-In the Visual Recognition Tool, click **Create classifier**. Then, upload the zipped image files from *server/resources* to the corresponding class as shown below. Make sure you name your classifier ``waste`` and the three classes should be ``Landfill``, ``Recycle``, and ``Compost``. (All the names should be case sensitive)
+In the Visual Recognition Tool, click `Create classifier`. Then, upload the zipped image files from `server/resources` to the corresponding class as shown below. Make sure you name your classifier ``waste`` and the three classes should be ``Landfill``, ``Recycle``, and ``Compost``. (All the names should be case sensitive).
 
 ![custom-model](docs/custom-model.png)
 
-Click **Create** after you uploaded all the files to the corresponding class. Now the visual recognition should start training the new custom model. The training process should take about 20 to 30 minutes, so you can start deploying the server and mobile app while waiting for it.
+Click `Create` after you uploaded all the files to the corresponding class. Now the visual recognition should start training the new custom model. The training process should take about 20 to 30 minutes, so you can start deploying the server and mobile app while waiting for it.
 
 ### Create custom model via command line
 
@@ -70,7 +70,7 @@ cf create-service-key visual-recognition-wws waste-sorter
 API_KEY=$(cf service-key visual-recognition-wws waste-sorter --guid | tr -d "-")
 ```
 
-Now go to the server directory. Let's create our custom model using the sample zipped image files we have under server/resources
+Now go to the server directory. Let's create our custom model using the sample zipped image files we have under `server/resources`
 ```shell
 cd server
 echo $API_KEY # Make sure your API_KEY is not empty
