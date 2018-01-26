@@ -1,5 +1,5 @@
 cf create-service-key visual-recognition-wws waste-sorter
-API_KEY=$(cf service-key visual-recognition-wws waste-sorter --guid)
+API_KEY=$(cf service-key visual-recognition-wws waste-sorter --guid | tr -d "-")
 if [ ${#API_KEY} -eq 0 ]; then
 	echo 'Cannot retrieve your visual recognition api-key, exiting now.'
 	exit 1
