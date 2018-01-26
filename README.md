@@ -67,7 +67,7 @@ Click **Create** after you uploaded all the files to the corresponding class. No
 After you provision the Visual Recognition service, run the following command to create your Visual Recognition API KEY
 ```shell
 cf create-service-key visual-recognition-wws waste-sorter
-API_KEY=$(cf service-key visual-recognition-wws waste-sorter --guid)
+API_KEY=$(cf service-key visual-recognition-wws waste-sorter --guid | tr -d "-")
 ```
 
 Now go to the server directory. Let's create our custom model using the sample zipped image files we have under server/resources
