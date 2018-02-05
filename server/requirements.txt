@@ -1,4 +1,0 @@
-Flask>=0.12
-requests>=2.18
-watson-developer-cloud>=1.0.2
-metrics-tracker-client>=1.1.1
