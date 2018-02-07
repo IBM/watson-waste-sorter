@@ -3,7 +3,7 @@
 //  Watson Waste Sorter
 //
 //  Created by XiaoguangMo on 12/4/17.
-//  Copyright © 2017 XiaoguangMo. All rights reserved.
+//  Copyright © 2017 IBM Inc. All rights reserved.
 //
 
 import UIKit

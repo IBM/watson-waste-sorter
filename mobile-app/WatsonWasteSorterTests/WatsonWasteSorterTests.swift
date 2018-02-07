@@ -3,7 +3,7 @@
 //  WatsonWasteSorterTests
 //
 //  Created by XiaoguangMo on 1/31/18.
-//  Copyright © 2018 XiaoguangMo. All rights reserved.
+//  Copyright © 2018 IBM Inc. All rights reserved.
 //
 
 import XCTest

@@ -85,9 +85,35 @@ Now in the server repository, push your server application to Cloud Foundry
 cf push
 ```
 
-Once the deployment is success, your backend server should be running on the cloud and able to classify the different kind of waste once the model finish training. Now let's go ahead and create our mobile app to use this classifier.
+Once the deployment is success, your backend server should be running on the cloud and able to classify the different kind of waste once the model finish training. Please take a note with your server application's endpoint as you will need it in the next step. Now let's go ahead and create our mobile app to use this classifier.
 
 ## 3. Create the mobile application and connect it with the server
+
+In order to test the full features for this application, you need to have [Xcode 8.0 and above](https://developer.apple.com/xcode/) installed and an IOS device to deploy the application.
+
+Now Open your Xcode and select `Open another project...`, then select the `mobile-app/WatsonWasteSorter.xcworkspace` file and click `Open`.
+
+Next, you need to modify the `WatsonWasteSorter/Info.plist` with the endpoint of the API server you just deployed. Replace the `SERVER_API_ENDPOINT`'s value section
+with your server endpoint with extension `/api/sort`.
+
+![plist](docs/plist.png)
+
+Next, you will need to sign your application with your Apple account. Go to the mobile app's `General` section, under `Signing`'s Team select your team or add an account. Now your mobile app is signed and you are ready to deploy your Waste Sorter app.
+
+> Note: If you have trouble to Sign your Mobile app, please refer to https://help.apple.com/xcode/mac/current/#/dev60b6fbbc7
+
+Now, Connect your IOS device to your machine and select your device in Xcode. Click the run icon and your mobile app should be installed on your device.
+
+## 4. Using the Waste Sorter mobile application
+
+Congratulation, at this point you should have an mobile app that can classify wastes using your camera. Now you can just simply point your camera to any waste
+and click the camera icon to take a picture. Then the application should tell you where the waste should go like this.
+
+![screenshot](docs/screenshot.jpg)
+
+Now you should have a better idea on how to sort your trash. Note that if you have a result that said `unclassified`, it means your image is too blurry or the
+waste is too far. In that case just simply point your camera closer and retake a new picture.
+> If you want to classify another waste, simply click the center of the screen.
 
 ## Backend API usage
 

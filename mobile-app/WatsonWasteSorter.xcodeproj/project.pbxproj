@@ -241,7 +241,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = XiaoguangMo;
+				ORGANIZATIONNAME = "IBM Inc.";
 				TargetAttributes = {
 					AEED0FCE2022857E00A86A33 = {
 						CreatedOnToolsVersion = 9.2;
