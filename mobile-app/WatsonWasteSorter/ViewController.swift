@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var shoot: UIImageView!
     var myImage: UIImage!
     let cameraManager = CameraManager()
+    let SERVER_API_ENDPOINT = Bundle.main.infoDictionary!["SERVER_API_ENDPOINT"] as! String
     override func viewDidLoad() {
         super.viewDidLoad()
         cameraManager.addPreviewLayerToView(self.main)
@@ -32,7 +33,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 multipartFormData: { multipartFormData in
                     multipartFormData.append(imageData, withName: "images_file", fileName: "image.jpg", mimeType: "image/jpg")
             },
-                to: "https://watson-waste-sorter.mybluemix.net/api/sort",
+                to: self.SERVER_API_ENDPOINT,
                 encodingCompletion: { encodingResult in
                     switch encodingResult {
                     case .success(let upload, _, _):
