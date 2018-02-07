@@ -115,24 +115,6 @@ Now you should have a better idea on how to sort your trash. Note that if you ha
 waste is too far. In that case just simply point your camera closer and retake a new picture.
 > If you want to classify another waste, simply click the center of the screen.
 
-## Backend API usage
-
-Do a POST request at `https://watson-waste-sorter.mybluemix.net/api/sort` with the image as the parameter.
-Return value should be in JSON.
-
-Example in Bash:
-
-Input: png/jpg/jpeg file
-```
-curl -X POST -F "images_file=@server/plastic_fork.jpg" "https://watson-waste-sorter.mybluemix.net/api/sort"
-```
-
-Output:
-```
-{"confident score": 0.547405, "status code": 200, "result": "Recycle"}
-```
-
-
 # Troubleshooting
 
 ## Privacy Notice
