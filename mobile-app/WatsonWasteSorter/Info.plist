@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>SERVER_API_ENDPOINT</key>
-	<string>https://watson-waste-sorter-xxxxxxxx.mybluemix.net/api/sort</string>
+	<string>https://watson-waste-sorter.mybluemix.net/api/sort</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>View waste</string>
 	<key>NSCameraUsageDescription</key>
