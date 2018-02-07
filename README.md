@@ -117,6 +117,8 @@ waste is too far. In that case just simply point your camera closer and retake a
 
 # Troubleshooting
 
+- To clean up, simply simple delete your mobile app and run `cf delete watson-waste-sorter` to delete your server.
+
 ## Privacy Notice
 
 If using the Deploy to IBM Cloud button some metrics are tracked, the following information is sent to a [Deployment Tracker](https://github.com/IBM/metrics-collector-service) service on each deployment:
