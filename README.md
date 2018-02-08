@@ -89,7 +89,7 @@ Once the deployment succeeds, your backend server will be running in the cloud a
 
 ## 3. Create the mobile application and connect it to the server
 
-In order to test the full features for this application, you need to have [Xcode 8.0 and above](https://developer.apple.com/xcode/) installed and an IOS device to deploy the application.
+In order to test the full features for this application, you need to have [Xcode 8.0 or above](https://developer.apple.com/xcode/) installed and an IOS device to deploy the application.
 
 Now Open your Xcode and select `Open another project...`, then select the `mobile-app/WatsonWasteSorter.xcworkspace` file and click `Open`.
 
@@ -117,7 +117,7 @@ waste is too far. In that case just simply point your camera closer and retake a
 
 # Troubleshooting
 
-* To clean up, simply delete your mobile app. Then you can delete your server application via the [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps/)
+* To clean up, simply delete your mobile app. Then you can delete your server application via the [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps/).
 
 ## Privacy Notice
 
