@@ -4,7 +4,7 @@
 # watson-waste-sorter
 ***Work in progress***
 
-In this developer code pattern, we will create a mobile app, Python Server with Flask, and Watson Visual Recognition. This mobile app sends pictures of waste and garbage to be analyzed by a server app, using Watson Visual Recognition. The server application will use pictures of common trash to train Watson Visual Recognition to identify various categories of waste, i.e. recycle, compost, or landfill. A developer can leverage this to create their own custom Visual Recognition classifiers for their use cases.
+In this developer code pattern, we will create a mobile app, Python Server with Flask, and Watson Visual Recognition. This mobile app sends pictures of waste and garbage to be analyzed by a server app, using Watson Visual Recognition. The server application will use pictures of common trash to train Watson Visual Recognition to identify various categories of waste, e.g. recycle, compost, or landfill. A developer can leverage this to create their own custom Visual Recognition classifiers for their use cases.
 
 When the reader has completed this Code Pattern, they will understand how to:
 - Create a Python server with Flask that can utilize the Watson Visual Recognition service for classifying images.
@@ -85,7 +85,7 @@ Now in the server repository, push your server application to Cloud Foundry
 cf push
 ```
 
-Once the deployment is succeeds, your backend server should be running on the cloud and able to classify the different kinds of waste once the model finishes training. Please take a note with your server application's endpoint as you will need it in the next step. Now let's go ahead and create our mobile app to use this classifier.
+Once the deployment succeeds, your backend server will be running in the cloud and be able to classify the different kinds of waste once the model finishes training. Please take note of your server application's endpoint as you will need it in the next step. Now let's go ahead and create our mobile app to use this classifier.
 
 ## 3. Create the mobile application and connect it to the server
 
@@ -100,24 +100,24 @@ with your server endpoint with extension `/api/sort`.
 
 Next, you will need to sign your application with your Apple account. Go to the mobile app's `General` section, under `Signing`'s Team select your team or add an account. Now your mobile app is signed and you are ready to deploy your Waste Sorter app.
 
-> Note: If you have trouble to Sign your Mobile app, please refer to https://help.apple.com/xcode/mac/current/#/dev60b6fbbc7
+> Note: If you have trouble signing your Mobile app, please refer to https://help.apple.com/xcode/mac/current/#/dev60b6fbbc7
 
-Now, Connect your IOS device to your machine and select your device in Xcode. Click the run icon and your mobile app should be installed on your device.
+Now, connect your IOS device to your machine and select your device in Xcode. Click the run icon and your mobile app will be installed on your device.
 
 ## 4. Using the Waste Sorter mobile application
 
-Congratulation, at this point you should have a mobile app that can classify wastes using your camera. Now you can just simply point your camera to any waste
+Congratulations, at this point you should have a mobile app that can classify waste using your camera. Now you can just simply point your camera to any waste
 and click the camera icon to take a picture. Then the application should tell you where the waste should go like this.
 
 ![screenshot](docs/screenshot.jpg)
 
-Now you should have a better idea on how to sort your trash. Note that if you have a result that said `unclassified`, it means your image is too blurry or the
+Now you should have a better idea on how to sort your trash. Note that if you have a result that said `unclassified`, it means your image is either too blurry or the
 waste is too far. In that case just simply point your camera closer and retake a new picture.
-> If you want to classify another waste, simply click the center of the screen.
+> If you want to classify another waste item, simply click the center of the screen.
 
 # Troubleshooting
 
-- To clean up, simply simple delete your mobile app and run `cf delete watson-waste-sorter` to delete your server.
+* To clean up, simply delete your mobile app. Then you can delete your server application via the [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps/)
 
 ## Privacy Notice
 
