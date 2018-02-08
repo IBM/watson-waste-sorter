@@ -4,7 +4,7 @@
 # watson-waste-sorter
 ***Work in progress***
 
-In this developer code pattern, we will create a mobile app, Python Server with Flask, and Watson Visual Recognition. This mobile app sends pictures of waste and garbage to be analyzed by a server app, using Watson Visual Recognition. The server application will use pictures of common trash to train Watson Visual Recognition to identify various catagories of waste, i.e. recycle, compost, or landfill. A developer can leverage this to create their own custom Visual Recognition classifiers for their use cases.
+In this developer code pattern, we will create a mobile app, Python Server with Flask, and Watson Visual Recognition. This mobile app sends pictures of waste and garbage to be analyzed by a server app, using Watson Visual Recognition. The server application will use pictures of common trash to train Watson Visual Recognition to identify various categories of waste, i.e. recycle, compost, or landfill. A developer can leverage this to create their own custom Visual Recognition classifiers for their use cases.
 
 When the reader has completed this Code Pattern, they will understand how to:
 - Create a Python server with Flask that can utilize the Watson Visual Recognition service for classifying images.
@@ -27,7 +27,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 ## Featured Technologies
 
 * Mobile: Systems of engagement are increasingly using mobile technology as the platform for delivery.
-* [Flask](http://flask.pocoo.org/): A micro webdevelopment framework for Python.
+* [Flask](http://flask.pocoo.org/): A micro web development framework for Python.
 
 # Prerequisite
 
@@ -85,9 +85,9 @@ Now in the server repository, push your server application to Cloud Foundry
 cf push
 ```
 
-Once the deployment is success, your backend server should be running on the cloud and able to classify the different kind of waste once the model finish training. Please take a note with your server application's endpoint as you will need it in the next step. Now let's go ahead and create our mobile app to use this classifier.
+Once the deployment is succeeds, your backend server should be running on the cloud and able to classify the different kinds of waste once the model finishes training. Please take a note with your server application's endpoint as you will need it in the next step. Now let's go ahead and create our mobile app to use this classifier.
 
-## 3. Create the mobile application and connect it with the server
+## 3. Create the mobile application and connect it to the server
 
 In order to test the full features for this application, you need to have [Xcode 8.0 and above](https://developer.apple.com/xcode/) installed and an IOS device to deploy the application.
 
@@ -106,7 +106,7 @@ Now, Connect your IOS device to your machine and select your device in Xcode. Cl
 
 ## 4. Using the Waste Sorter mobile application
 
-Congratulation, at this point you should have an mobile app that can classify wastes using your camera. Now you can just simply point your camera to any waste
+Congratulation, at this point you should have a mobile app that can classify wastes using your camera. Now you can just simply point your camera to any waste
 and click the camera icon to take a picture. Then the application should tell you where the waste should go like this.
 
 ![screenshot](docs/screenshot.jpg)
