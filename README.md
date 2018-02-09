@@ -1,8 +1,7 @@
 [![Build Status](https://travis-ci.org/IBM/watson-waste-sorter.svg?branch=master)](https://travis-ci.org/IBM/watson-waste-sorter)
 ![IBM Cloud Deployments](https://metrics-tracker.mybluemix.net/stats/a9da622b1e6fbfdc883c6a1c0ca2e171/badge.svg)
 
-# watson-waste-sorter
-***Work in progress***
+# Create a custom Visual Recognition classifier for sorting waste
 
 In this developer code pattern, we will create a mobile app, Python Server with Flask, and Watson Visual Recognition. This mobile app sends pictures of waste and garbage to be analyzed by a server app, using Watson Visual Recognition. The server application will use pictures of common trash to train Watson Visual Recognition to identify various categories of waste, e.g. recycle, compost, or landfill. A developer can leverage this to create their own custom Visual Recognition classifiers for their use cases.
 
@@ -33,13 +32,24 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 Create an [IBM Cloud account](https://console.bluemix.net/registration/) and install the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) on your machine.
 
+# Steps
+1. [Create your custom visual recognition model](#1-create-your-custom-visual-recognition-model)
+2. [Deploy the server application](#2-deploy-the-server-application)
+3. [Create the mobile application and connect it to the server](#3-create-the-mobile-application-and-connect-it-to-the-server)
+4. [Using the Waste Sorter mobile application](#4-using-the-waste-sorter-mobile-application)
+
 ## Deploy the Server Application to IBM Cloud
+
+You can either go through [Step 1 and 2](#1-create-your-custom-visual-recognition-model) to create your application server, or
+
+You can simply click the `Deploy to IBM Cloud` button and `Create` the toolchain to provision, train, and run your visual recognition server.
+Then, go to the [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps/) to verify your server is running and take note of your
+server application's endpoint. Once you done that, you can move on to [Step 3](#3-create-the-mobile-application-and-connect-it-to-the-server)
+and deploy your mobile application.
 
 [![Deploy to IBM Cloud](https://metrics-tracker.mybluemix.net/stats/a9da622b1e6fbfdc883c6a1c0ca2e171/button.svg)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/watson-waste-sorter)
 
-# Steps
-
-## 1. Create your custom visual recognition model.
+## 1. Create your custom visual recognition model
 
 First, we need to login to the Cloud Foundry CLI.
 ```shell
