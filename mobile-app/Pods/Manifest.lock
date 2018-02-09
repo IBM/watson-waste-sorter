@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.6.0)
+  - CameraManager (4.0.1)
+  - SimpleAlert (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.6)
+  - CameraManager (~> 4.0)
+  - SimpleAlert (~> 3.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  CameraManager: 56b3516e8e22cfbf56f3f0401291561e1ad9b3d0
+  SimpleAlert: 7265c3006749c680627545b61ac37d9ab1ab0be6
+
+PODFILE CHECKSUM: df2d09ba81e3c273ef1d7b7a8e789952c491139f
+
+COCOAPODS: 1.4.0

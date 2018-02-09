@@ -9,6 +9,7 @@ applications:
   domain: mybluemix.net
   buildpack: python_buildpack
   path: .
+  random-route: true
   instances: 1
   services:
   - visual-recognition-wws
