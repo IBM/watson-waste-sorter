@@ -62,6 +62,8 @@ Service and name it `visual-recognition-wws`. You can provision it using the abo
 cf create-service watson_vision_combined free visual-recognition-wws
 ```
 
+Then, either use the Visual Recognition [Web UI](#create-custom-model-via-web-ui) or [Command Line](#create-custom-model-via-command-line) to create your custom model.
+
 ### Create custom model via Web UI
 
 After you provision the Visual Recognition service, create a new credential under the `Service credentials` tab on the left side of the Web UI. Now, you should see the `api_key` for the service. Use it to access the [Visual Recognition Tool](https://watson-visual-recognition.ng.bluemix.net/) Web UI and create your own custom visual recognition model.
