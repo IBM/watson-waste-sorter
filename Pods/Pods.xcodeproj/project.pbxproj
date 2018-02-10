@@ -3,198 +3,292 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE04114DEE8608CDD0AF2D922FAD8A26 /* Timeline.swift */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C212501A6F7D342D704EEFE86514DDD0 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E7C9FF24310B80A666F3EBAC75FA054 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		266F81F65725AFAC2075C46066447B49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419246B0D1A17C3B79660F98836A6328 /* TaskDelegate.swift */; };
+		08C3F808630C144F90685E34BCED8DEE /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471D8B3F1EC2DDBCA2DA34BAB582C08 /* NVActivityIndicatorAnimationBallGridBeat.swift */; };
+		0A997B95440D068B3D3421236C3C2DFC /* SimpleAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 196FBE215DFDAFAE08D5AD1A8F85CCB1 /* SimpleAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F49107D58A0EA46442B57DC51836A /* Timeline.swift */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC703AEC0664AD317C7FBBEFBF9EF58C /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F82D6EB5298B115643E5AF2832E3F4C /* AlertControllerPresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BCF9D0B9EC5304329FFE1466B9D205 /* AlertControllerPresentTransition.swift */; };
+		1FDD8BFC5854829DE4D832CA3DB54F71 /* ActionSheetControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27A0E9314951106EB30BE49CE58EC0 /* ActionSheetControllerTransition.swift */; };
+		21DCFB78A4DB6ED465FC45945582E8CD /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85A7DF52D9D83CC2C6BDE894CB2CA9C /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		240FA1CEFEB5E3A5F4D04CE4E25E8B82 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8090F7AEE2B0F83810C8F8D99FF6D6 /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
+		2F228C08A0171EA6AC826DC7C1A1DB41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		2F8B8A9FE8468F9B411A6F4A7A5BBB97 /* ViewControllerAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198919BC2946DC1244F4200BFBC5727 /* ViewControllerAnimatedTransition.swift */; };
+		307D313A0CE0CFC89C44B5795ED927F3 /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56591BB208A89B3F17EA883F633E7 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */; };
+		33A32827521D6AB7BA157451DA040C07 /* NVActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E344B463CE035FE23C203B3474EA4D8 /* NVActivityIndicatorViewable.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271BF7DECDBFF3AA2558641775B7A6B /* TaskDelegate.swift */; };
+		384D859EF2E426C5CBCF9434EE9E7F2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
 		3E5A83C34B4B22B2349EAA527B3FF464 /* Pods-WatsonWasteSorterTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DCD37708F57ED2C6CBB7F79780A6F3 /* Pods-WatsonWasteSorterTests-dummy.m */; };
+		4242BC17D3F6E147330C75DD9C737E97 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA7924CDBCBA5B75205961C4BB9C07 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		42541268F9036CAFE8682204ABD77AA6 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7FFFE2B6103035AC0CD16BDA66749D /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
+		43B4894A9BCC0E34F484E3D3BF01D7CE /* SimpleAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A35002F83B38C1B616ECF1D188A71 /* SimpleAlert-dummy.m */; };
+		442D3B54A30680D61EDF2192191A990B /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25CAD82A53D80529BF5C8394C976EA8 /* NVActivityIndicatorAnimationLineScaleParty.swift */; };
 		449B8E3D127E83BE07F4A0FBBE13455A /* Pods-WatsonWasteSorterUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E5F3D98F5934424FE293E8D6179CA8 /* Pods-WatsonWasteSorterUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		464EA54D591FE3AC710B1DAA19864B49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		478390E59DD646306D2307FA0A3306A5 /* AlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8115FE4D2D3A5E37A983B3C852F1E /* AlertContentView.swift */; };
-		489264360DC477BC9FD1944F5CDF2C29 /* ActionSheetControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C73CC7F0E30D55C968AD2862F017975 /* ActionSheetControllerTransition.swift */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CEF6111F6481D0CE2CDCDF11323F32 /* Request.swift */; };
-		5719D777F46F7C6F689C6898EA54F524 /* CameraManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DEB4AFB7CE18FEAB6D0BA0D42EEE67 /* CameraManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5872C4C1176DF356B2ADE978FCD7A44B /* SimpleAlert.xib in Sources */ = {isa = PBXBuildFile; fileRef = CC1363DDC0E6992B5386CA8CAE1AE4B9 /* SimpleAlert.xib */; };
-		5F51ED3CF5DFA2CA9ED047C64EAD43DC /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BC7048722B38CEF8A0593E470ACB0C /* TextField.swift */; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CF0027BDB4CFCB012BA5573E72011C /* DispatchQueue+Alamofire.swift */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8F0702949C77CE667729E1625A20A /* ServerTrustPolicy.swift */; };
-		7079D449EB56FFE1BA7D7E67CDDEDDC7 /* ViewControllerAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E371A42BCC4CFDF22AF957F7816DEB5E /* ViewControllerAnimatedTransition.swift */; };
+		454D6945388874871E2F0F9B04A47E70 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71983F499A62353F4EBFDCA4659C69B3 /* NVActivityIndicatorAnimationBallClipRotate.swift */; };
+		464EA54D591FE3AC710B1DAA19864B49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		4D7F64AC19454C57F7C900664F31EC04 /* NVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BEB1C38EBF41C7B5C0A137EA093334 /* NVActivityIndicatorView-dummy.m */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258645370172B16BDB3F52179AD3AF5 /* Request.swift */; };
+		565EB166ECD22A6F3062009C3C0B8A8C /* SimpleAlert.xib in Sources */ = {isa = PBXBuildFile; fileRef = 1E389C42E3CE40970A77EED6D889FEB2 /* SimpleAlert.xib */; };
+		570B956E4FA8AE91AB41A0D149C4C197 /* AlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55CF6890E84085DE8AE0303154AC00 /* AlertContentView.swift */; };
+		5719D777F46F7C6F689C6898EA54F524 /* CameraManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF92DE800083C5AAC391BFE800457BC /* CameraManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A0E6739E53AC36665276ABE5F692693 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E8BCC8220675DC45B0C976E09A0366 /* NVActivityIndicatorShape.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DAC77065E24E4B266E97B700E8F7EE /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC145779AD38719739477FEFF7170DB /* ServerTrustPolicy.swift */; };
+		658DEEE0063EF5D5F9E739140DB43D8B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BF6EB212149BEFA4937B504C100D91 /* UIViewExtension.swift */; };
+		668E5D4DECE5E4A8E8D9E6D47164D194 /* NVActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069D95C6B8C80157AA5F09CFA1338421 /* NVActivityIndicatorAnimationPacman.swift */; };
+		66EA819AEC38557662BD80187474A9A0 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A1A8A5C7685B15FE82B46FB011A550 /* NVActivityIndicatorAnimationBallBeat.swift */; };
+		68E553CBA221B9B52102F5D9CA1906CE /* Pods-WatsonWasteSorter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5196A9A359ABD98DA8CB6208385E8D /* Pods-WatsonWasteSorter-dummy.m */; };
+		6C87A072AB4829034A498BA236159E95 /* Pods-WatsonWasteSorter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 933EB1737E6A1DB640DDB347E23BA8E5 /* Pods-WatsonWasteSorter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F6F0829AC8AC2E8BC57A5054DD13E8E /* ActionSheetControllerPresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC36577E835DB5CE728221347C8FA71 /* ActionSheetControllerPresentTransition.swift */; };
+		703E23E87D370D269652E02CC4D0DB13 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6B13C04DD264AF6D5B427B0F4CD3D5 /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
 		7202F451A5C8F1F0C7A4BD7B19C8258B /* Pods-WatsonWasteSorterTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A6B254C933162552F1D11E7FAD02B5 /* Pods-WatsonWasteSorterTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		747377BC2B437AE77EFDBE4BC55FD495 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F42BFD75A4F58E117C9C75B35C0942 /* AlertAction.swift */; };
-		7725635ED22DF383AD71B3C18729BF37 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79BAD731DBE9C010B80276D3D78649 /* CGFloatExtension.swift */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88654D16E33A48E144CB3FB3BCDC7064 /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E153A573FF15D20960EAD380319BE55 /* Result.swift */; };
-		8633289B539FF98D896D27B690120445 /* SimpleAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 279290B0C8EB90DFA9BD202E6C79BD2D /* SimpleAlert-dummy.m */; };
-		881E11FFFB6FF1433CE3F4AF9B94033E /* Pods-WatsonWasteSorter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 933EB1737E6A1DB640DDB347E23BA8E5 /* Pods-WatsonWasteSorter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BB622C1F090A88EBADAA503A04F90DF /* CameraManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBEA094DB5970385E8A3AE83EF87F83 /* CameraManager-dummy.m */; };
-		9115850EEB06756650E44892F9E49FF9 /* SimpleAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52EBF37B110C4AC0E40862142520AF6F /* SimpleAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9462551BBBC4C675457BE9569CA43F8C /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF19C52AB31C8853A0E9D98AACFCE39 /* CameraManager.swift */; };
-		96723752676756F5E6F2129F72664D32 /* UIAlertControllerStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69998AB9DE29F0144A18970E9ED30B9C /* UIAlertControllerStyleExtension.swift */; };
-		9804911890589F34D519B8AA4A9DF02A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		78273217402C4A644B3EBC3B149EE840 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973644D82FAFEEB4810B0A9821D1E0F /* NVActivityIndicatorAnimationBallPulse.swift */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29492C9702E3F4591267DEC6FD2FC08 /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C35A08FD1B35D78A35479C9E50FB3 /* Result.swift */; };
+		7F4A6A5D53B89FD3053C04833838B04A /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6011012D370E8D37BB1A9480295175 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		7FEE370B6529A919640173C97006CFF1 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6560C5EB6FD77F6E90E69B3D623538 /* NVActivityIndicatorAnimationBallZigZag.swift */; };
+		827FF757B2632C3571BC6384CE33AE18 /* AlertControllerDismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B3E5B2BC3C525787357405A5654DB /* AlertControllerDismissTransition.swift */; };
+		8501C56A979C09DC2700800FD342DB2D /* NVActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F030659C7F1943D2C09A400649341E /* NVActivityIndicatorAnimationBallRotate.swift */; };
+		87BCF1622F215BD96520BB64E5E94091 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C938E2390CE2208967A9938A5DFBA6 /* NVActivityIndicatorAnimationBallPulseSync.swift */; };
+		8B748A0C087F2037A1C14E9172BF0014 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62541B92F563129AD50C8887723D6 /* NVActivityIndicatorAnimationBallScaleRipple.swift */; };
+		8BB622C1F090A88EBADAA503A04F90DF /* CameraManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D43A11015ADC94FB2136B469E778A436 /* CameraManager-dummy.m */; };
+		8D961959484FC1FF71D46A27E889A75A /* NVActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA028FE233A779D0597F7D8F89D856D /* NVActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		911F8A697E6802F62098E1060A40AB03 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A8D1A4AD55EBE459A9D1A4F00B1F6F /* NVActivityIndicatorAnimationAudioEqualizer.swift */; };
+		9228D5B93079B71B8EA798A37817E5B0 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037CBCCCC56ED7983316BFE3A04814A /* NVActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		9462551BBBC4C675457BE9569CA43F8C /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479674477DB5ED2A06A3CF75F0A8E18 /* CameraManager.swift */; };
+		99DDD3A9627493DEC8152E8589525F55 /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3258E7BD67B2A79151EA96FA18E510 /* NVActivityIndicatorView.swift */; };
 		9DD61A0F7C097DBAF911A408CB8EFE9F /* Pods-WatsonWasteSorterUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EC830DE1E8C900A592E84CFE8E1A98 /* Pods-WatsonWasteSorterUITests-dummy.m */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC955EF196882D69697DD02A63403B /* AFError.swift */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FFEBF916ED703C3A8A0FBD5F96D3CD /* NetworkReachabilityManager.swift */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E972973B256D35097FF84652F7CAA8 /* Alamofire-dummy.m */; };
-		AD3B874A1698B7F323F5A5F50889379F /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A520A32E9FD2D068C75986E89B1BE49 /* Info.swift */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BB04042A00599F50D2D051F93B787 /* SessionManager.swift */; };
-		B484B12A6830E65D298992E4C1CFB532 /* ActionSheetControllerDismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA2129D6FB2EA0758406F630D941547 /* ActionSheetControllerDismissTransition.swift */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D88CF14142EC32A03C0F763170613AA /* MultipartFormData.swift */; };
-		BA503431821665300677E7EA0CF0E210 /* Pods-WatsonWasteSorter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5196A9A359ABD98DA8CB6208385E8D /* Pods-WatsonWasteSorter-dummy.m */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9A139047AC93C1CA897A7C20D050F6 /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A8788DE18880583484427549420DE /* ParameterEncoding.swift */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4085A12D4272C7D47C172049334246 /* Response.swift */; };
-		CEF4C86C36C9ABB4C025AF75FCB42974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		CF602AA7CDA7B308AA27E723C35FA6C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		D3E42C9B1323470E9DEEFDA29E2BF7B1 /* AlertControllerDismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72652DD85F4E0571E5BC09D1B2DD66E /* AlertControllerDismissTransition.swift */; };
-		D49CBF179B22EAE1825DF2E009EAF674 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC4D1EBF3D45C9EA49B3BDA9729122 /* UIViewExtension.swift */; };
-		E752EF92A954E538419839D6A6903313 /* ActionSheetControllerPresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC96CAF9513882437AC16B441003747 /* ActionSheetControllerPresentTransition.swift */; };
-		EB4F36090E87AFABA260EE7E9D263246 /* SimpleAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = DD129DBBBA92393830240840E3178C24 /* SimpleAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322533E62550AA43D20AFB896449DAE8 /* Notifications.swift */; };
-		F325188DC578B7980F47809DB58D3A47 /* AlertControllerPresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2C1466525FABBD790577CA5B99357 /* AlertControllerPresentTransition.swift */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B2720B1CE1B0F2858D3653105BB7C /* ResponseSerialization.swift */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753CF95809827CF52E55D2D087BBC34 /* Alamofire.swift */; };
-		FDA27EA4950AB931505953B6C269813F /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25599FC4F5D9F6C6A953124740E447CD /* SimpleAlert.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738513FCC9AB65FA32405EAAA6CCB70 /* AFError.swift */; };
+		A14036702B60EE3DF47A696F9272F825 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30709EC2FD07CAF8D4D4C9597B90413D /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FFA30C2DE3FABC8833C15FE1B6F1F /* NetworkReachabilityManager.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C975C44FBEB082D5AADA7D5CFFCF82 /* Alamofire-dummy.m */; };
+		AC6783DA5C8F57783CF23C50613135C4 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85333D987B0E282DAA870C7BC5C32F58 /* NVActivityIndicatorAnimationBallGridPulse.swift */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C64E845358B16C00FD76DD6477A38 /* SessionManager.swift */; };
+		AEC875604B480BE726BA6CE18DB5AA6F /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78416C68A51F644D25250E04BDE4C722 /* NVActivityIndicatorAnimationCubeTransition.swift */; };
+		B4A716C58335928C73DDFF23358D30B2 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A270A7F8150853778C04A3F3160AF241 /* CGFloatExtension.swift */; };
+		B6223D0C1913849B6E826BBA7698C09C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F1948D6B89E783504EEBDA4EDAEF01 /* MultipartFormData.swift */; };
+		B862B185E6DBE2072B134F1542226232 /* ActionSheetControllerDismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17790EE949EA9CBEADA801BCE85683F0 /* ActionSheetControllerDismissTransition.swift */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B131056223307A5ED2CF2FE0132D2 /* Validation.swift */; };
+		BE26A278F95E094311F6E1B1FAD285F9 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926AE0DCE3FD6B85B326787E80EFA170 /* NVActivityIndicatorAnimationSquareSpin.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D77E91DDBDB19A5A03146BC30A2D /* ParameterEncoding.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2BBC808A2B2831D56E58873DCDFE3B /* Response.swift */; };
+		CC8F62CE6BBE9CE9C7EF7742A459963C /* NVActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B33D58763592A293EF1AFEEA635606 /* NVActivityIndicatorAnimationBallScale.swift */; };
+		CDD14F56BAE0F8921201B54E261ABF85 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217420303E3127E5015FA28EB68046E9 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+		CEF4C86C36C9ABB4C025AF75FCB42974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		CF602AA7CDA7B308AA27E723C35FA6C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		D16A25127CB40B0CB1757FC1F124D05D /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405A154116659BC0A6B6E45774CF0D5 /* NVActivityIndicatorPresenter.swift */; };
+		D3720BFA2E5095AC731CDD87A8EE4BC8 /* SimpleAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDAAE0C30AD29B4F01267EF12BEF7940 /* SimpleAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9B97EA5FD4BA034331BAD9A8FE8EDB7 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093CA521D4036ED7A16ADC4F019A25DA /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
+		D9F0CC4816970CB8BB50DF07397D2D45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
+		DB16138DB7C9333B4CCA228657782131 /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5823C0C6B749B5AF3F6D6BA2150C25 /* NVActivityIndicatorAnimationDelegate.swift */; };
+		E3BA27147B6FB7E9BFA2FD651461A207 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		E3CA84084C1AA5EE7BC3024B0904AF8F /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB00BBDB611F3F63263AE39062769E /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		E86E3CEC056AE6EB9A799755CDED7D28 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */; };
+		EA06CA2F2AA43822BB4FAEE1B7911F20 /* UIAlertControllerStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697EBFDFA7269CD106B249671B875221 /* UIAlertControllerStyleExtension.swift */; };
+		EAB306F3EF9527904C5D56342697B84C /* NVActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699C63B31388D0F9A3A299D16661D69 /* NVActivityIndicatorAnimationLineScale.swift */; };
+		EACE8F8DDD60D63326C2DC0AF71338C8 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6A2E2909C4825B74EACD2C4B894C2 /* TextField.swift */; };
+		EEBA9F51FEC4CDE1172BBF7D09CCD83A /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041232F7E89EB2B43151B6519E6C1024 /* Info.swift */; };
+		EFAF4BB9DF37F64540764747D9289C2E /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE964FF65C85D6E98F86CC5177BD13DA /* NVActivityIndicatorAnimationOrbit.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF7A7AFB62FD080ABA9D2819C478CA /* Notifications.swift */; };
+		F181F678CC0FF847B73F5D7C767BF6A4 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A6A021BDB8841E3DF8A9D4779EC7AC /* AlertAction.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080062FC20E9A666136F128B62A0BC0 /* ResponseSerialization.swift */; };
+		F79C2763FF45442523EB4606AC148271 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA034ED52F81E963A763F0C784C7AAE1 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C32F0B1CEE23F48964D711720BD2ECA /* Alamofire.swift */; };
+		F942269CF2818EBEAAE00D3B14B269C9 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91904A7C5DF69B47EFC508CC9D1AC7 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		F956FE49B2FA6A44AF9D9885FD5DDD94 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C241D43EF6160AEBE90852DC15B8C9A /* SimpleAlert.swift */; };
+		FB1B6360412EEF5120AE6334681C1EFD /* NVActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58427681B724D23BF002029A628D5E1 /* NVActivityIndicatorAnimationBlank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0BE06A61966AB55A3D5D3F3EC6A39D12 /* PBXContainerItemProxy */ = {
+		5E2DD2824803F2B5185F118A051C87A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
-			remoteInfo = Alamofire;
-		};
-		504F2C63E7EF0132E0D1E827F460A7DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA5F05E35FB8869F15ACBC1E6377E8DE;
+			remoteGlobalIDString = DC2EB4175332AE391B1C565998E901F2;
 			remoteInfo = SimpleAlert;
 		};
-		6C0A50885BFF918DDB52EF98FE94E94F /* PBXContainerItemProxy */ = {
+		8430126D05B9E43B4801D442DDB4CF33 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FFBE657764C9F6D8E01DDE2949BD2E64;
 			remoteInfo = CameraManager;
 		};
+		9044B0652FFB1D29936F55EBC3EA16CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EDFE4052B5DE7D509935AC0774CB135;
+			remoteInfo = NVActivityIndicatorView;
+		};
+		BB86BBAD88DE55F228595DD6CD56DDD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03388526AB90227458E2D46A286549A3 /* Pods-WatsonWasteSorterUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WatsonWasteSorterUITests.modulemap"; sourceTree = "<group>"; };
-		0772AF3ECC46DB27CABDCAFC96D48F4B /* Pods-WatsonWasteSorter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WatsonWasteSorter.modulemap"; sourceTree = "<group>"; };
-		0BC96CAF9513882437AC16B441003747 /* ActionSheetControllerPresentTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetControllerPresentTransition.swift; path = SimpleAlert/ActionSheetControllerPresentTransition.swift; sourceTree = "<group>"; };
-		0F55B83FB3451CA25A92BA77CCA80D6D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		12BC7048722B38CEF8A0593E470ACB0C /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = SimpleAlert/TextField.swift; sourceTree = "<group>"; };
-		13EC955EF196882D69697DD02A63403B /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		25599FC4F5D9F6C6A953124740E447CD /* SimpleAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleAlert.swift; path = SimpleAlert/SimpleAlert.swift; sourceTree = "<group>"; };
-		25AEED5AF83F7CABEAB0F97CD1AFB654 /* Pods-WatsonWasteSorterTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WatsonWasteSorterTests.modulemap"; sourceTree = "<group>"; };
-		2753CF95809827CF52E55D2D087BBC34 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		279290B0C8EB90DFA9BD202E6C79BD2D /* SimpleAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleAlert-dummy.m"; sourceTree = "<group>"; };
-		2F4085A12D4272C7D47C172049334246 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		0089AE5F0C467BD73DE7186B1A797FD3 /* CameraManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CameraManager-prefix.pch"; sourceTree = "<group>"; };
+		03388526AB90227458E2D46A286549A3 /* Pods-WatsonWasteSorterUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WatsonWasteSorterUITests.modulemap"; sourceTree = "<group>"; };
+		041232F7E89EB2B43151B6519E6C1024 /* Info.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Info.swift; path = SimpleAlert/Info.swift; sourceTree = "<group>"; };
+		05C3D77E91DDBDB19A5A03146BC30A2D /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		069D95C6B8C80157AA5F09CFA1338421 /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationPacman.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
+		0772AF3ECC46DB27CABDCAFC96D48F4B /* Pods-WatsonWasteSorter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WatsonWasteSorter.modulemap"; sourceTree = "<group>"; };
+		093CA521D4036ED7A16ADC4F019A25DA /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
+		09B56591BB208A89B3F17EA883F633E7 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOut.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
+		0C32F0B1CEE23F48964D711720BD2ECA /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		0EA62541B92F563129AD50C8887723D6 /* NVActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRipple.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		128B6F42704EF97AC50F868095AAAA0C /* Pods_WatsonWasteSorterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WatsonWasteSorterUITests.framework; path = "Pods-WatsonWasteSorterUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		144AF2CAC57A87C0DD6F13E873856C8D /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		17790EE949EA9CBEADA801BCE85683F0 /* ActionSheetControllerDismissTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetControllerDismissTransition.swift; path = SimpleAlert/ActionSheetControllerDismissTransition.swift; sourceTree = "<group>"; };
+		196FBE215DFDAFAE08D5AD1A8F85CCB1 /* SimpleAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleAlert.h; path = SimpleAlert/SimpleAlert.h; sourceTree = "<group>"; };
+		1E389C42E3CE40970A77EED6D889FEB2 /* SimpleAlert.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SimpleAlert.xib; path = SimpleAlert/SimpleAlert.xib; sourceTree = "<group>"; };
+		1FD54E5C8236828827DF8DB9D5257BAE /* Pods_WatsonWasteSorter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WatsonWasteSorter.framework; path = "Pods-WatsonWasteSorter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		212C35A08FD1B35D78A35479C9E50FB3 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		217420303E3127E5015FA28EB68046E9 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationTriangleSkewSpin.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
+		25AEED5AF83F7CABEAB0F97CD1AFB654 /* Pods-WatsonWasteSorterTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WatsonWasteSorterTests.modulemap"; sourceTree = "<group>"; };
+		290FFA30C2DE3FABC8833C15FE1B6F1F /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		2BC145779AD38719739477FEFF7170DB /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		2C55CF6890E84085DE8AE0303154AC00 /* AlertContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertContentView.swift; path = SimpleAlert/AlertContentView.swift; sourceTree = "<group>"; };
+		30709EC2FD07CAF8D4D4C9597B90413D /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZagDeflect.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
 		31646453C5450F9118A53D4A6B818EF9 /* Pods-WatsonWasteSorterTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatsonWasteSorterTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		322533E62550AA43D20AFB896449DAE8 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		34EE85795A152EF1EE08D9AB7F397FF9 /* SimpleAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimpleAlert.modulemap; sourceTree = "<group>"; };
+		33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		359B3E5B2BC3C525787357405A5654DB /* AlertControllerDismissTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertControllerDismissTransition.swift; path = SimpleAlert/AlertControllerDismissTransition.swift; sourceTree = "<group>"; };
+		37C975C44FBEB082D5AADA7D5CFFCF82 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		38F7208125F2297CF5397B03E60EEEAD /* Pods-WatsonWasteSorterUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatsonWasteSorterUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3D88CF14142EC32A03C0F763170613AA /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		3E153A573FF15D20960EAD380319BE55 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		419246B0D1A17C3B79660F98836A6328 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		3917A50EB224EEDBC66971700D698782 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3973644D82FAFEEB4810B0A9821D1E0F /* NVActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulse.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		3BA028FE233A779D0597F7D8F89D856D /* NVActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		3C3F8F848DA90697CB03157512E08CC0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		402001014C97DBD9473CFD56F1547830 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40BEB1C38EBF41C7B5C0A137EA093334 /* NVActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NVActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
 		41A6B254C933162552F1D11E7FAD02B5 /* Pods-WatsonWasteSorterTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatsonWasteSorterTests-umbrella.h"; sourceTree = "<group>"; };
-		48CEF6111F6481D0CE2CDCDF11323F32 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		461F8363F1F192B836966C7FBE168725 /* Pods_WatsonWasteSorterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WatsonWasteSorterTests.framework; path = "Pods-WatsonWasteSorterTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		499B96DED11919A49E134D7B7E1F9F01 /* Pods-WatsonWasteSorterUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatsonWasteSorterUITests-resources.sh"; sourceTree = "<group>"; };
-		49FFEBF916ED703C3A8A0FBD5F96D3CD /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		49DB00BBDB611F3F63263AE39062769E /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
 		4A38601E9C262C3D39212C8F2850EAFC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8090F7AEE2B0F83810C8F8D99FF6D6 /* NVActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallTrianglePath.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
+		4B3258E7BD67B2A79151EA96FA18E510 /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorView.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView.swift; sourceTree = "<group>"; };
 		4B5196A9A359ABD98DA8CB6208385E8D /* Pods-WatsonWasteSorter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatsonWasteSorter-dummy.m"; sourceTree = "<group>"; };
-		4CC2C1466525FABBD790577CA5B99357 /* AlertControllerPresentTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertControllerPresentTransition.swift; path = SimpleAlert/AlertControllerPresentTransition.swift; sourceTree = "<group>"; };
-		4D8B3E2C2139BAEB253AE02263FF147A /* CameraManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CameraManager-prefix.pch"; sourceTree = "<group>"; };
-		52DEB4AFB7CE18FEAB6D0BA0D42EEE67 /* CameraManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CameraManager-umbrella.h"; sourceTree = "<group>"; };
-		52EBF37B110C4AC0E40862142520AF6F /* SimpleAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleAlert-umbrella.h"; sourceTree = "<group>"; };
-		5835AB4CA9B18AFE6E33A9999BCCBFBF /* CameraManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CameraManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF19C52AB31C8853A0E9D98AACFCE39 /* CameraManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraManager.swift; path = camera/CameraManager.swift; sourceTree = "<group>"; };
+		5271BF7DECDBFF3AA2558641775B7A6B /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		565723A7A999CAE6CA3167A23F5965BF /* NVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		5876D134CA267C7BA0B139983E545E0B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		5A67253A7CC7F8B5207E1C62A9C92BD1 /* CameraManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CameraManager.xcconfig; sourceTree = "<group>"; };
+		5C241D43EF6160AEBE90852DC15B8C9A /* SimpleAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleAlert.swift; path = SimpleAlert/SimpleAlert.swift; sourceTree = "<group>"; };
+		5CBA7924CDBCBA5B75205961C4BB9C07 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSemiCircleSpin.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
+		5E344B463CE035FE23C203B3474EA4D8 /* NVActivityIndicatorViewable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorViewable.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Presenter/NVActivityIndicatorViewable.swift; sourceTree = "<group>"; };
 		5F0B42FB9BD3E2205F171BDF6CB9E478 /* Pods-WatsonWasteSorterUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatsonWasteSorterUITests-frameworks.sh"; sourceTree = "<group>"; };
-		619BB04042A00599F50D2D051F93B787 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		66E972973B256D35097FF84652F7CAA8 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		69998AB9DE29F0144A18970E9ED30B9C /* UIAlertControllerStyleExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIAlertControllerStyleExtension.swift; path = SimpleAlert/UIAlertControllerStyleExtension.swift; sourceTree = "<group>"; };
-		732926198C8A846858C29B2E25C7EC32 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BC8E563B6B126A20B84604FB3D1B4E /* CameraManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CameraManager.framework; path = CameraManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C938E2390CE2208967A9938A5DFBA6 /* NVActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseSync.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		66B33D58763592A293EF1AFEEA635606 /* NVActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScale.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		67F030659C7F1943D2C09A400649341E /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotate.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
+		694F49107D58A0EA46442B57DC51836A /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		697EBFDFA7269CD106B249671B875221 /* UIAlertControllerStyleExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIAlertControllerStyleExtension.swift; path = SimpleAlert/UIAlertControllerStyleExtension.swift; sourceTree = "<group>"; };
+		6BD6A2E2909C4825B74EACD2C4B894C2 /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = SimpleAlert/TextField.swift; sourceTree = "<group>"; };
+		71983F499A62353F4EBFDCA4659C69B3 /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotate.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		72DF7A7AFB62FD080ABA9D2819C478CA /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		74A91417A94B7A1A693473137F25CE1E /* Pods-WatsonWasteSorterUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatsonWasteSorterUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		75F1948D6B89E783504EEBDA4EDAEF01 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		78416C68A51F644D25250E04BDE4C722 /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCubeTransition.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
 		78751947B3EE49EDBA3F362D3535A045 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78E18244FE68A75805F5E3BAE3D594BD /* Pods-WatsonWasteSorter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatsonWasteSorter-acknowledgements.markdown"; sourceTree = "<group>"; };
-		78FC4D1EBF3D45C9EA49B3BDA9729122 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = SimpleAlert/UIViewExtension.swift; sourceTree = "<group>"; };
-		8415443291D242419DE57E286CFD83AF /* SimpleAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleAlert-prefix.pch"; sourceTree = "<group>"; };
-		88654D16E33A48E144CB3FB3BCDC7064 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		8C73CC7F0E30D55C968AD2862F017975 /* ActionSheetControllerTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetControllerTransition.swift; path = SimpleAlert/ActionSheetControllerTransition.swift; sourceTree = "<group>"; };
-		8CA2129D6FB2EA0758406F630D941547 /* ActionSheetControllerDismissTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetControllerDismissTransition.swift; path = SimpleAlert/ActionSheetControllerDismissTransition.swift; sourceTree = "<group>"; };
-		931A8788DE18880583484427549420DE /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		7C2BBC808A2B2831D56E58873DCDFE3B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		7F5823C0C6B749B5AF3F6D6BA2150C25 /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationDelegate.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		7F7FFFE2B6103035AC0CD16BDA66749D /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotateChase.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		8405A154116659BC0A6B6E45774CF0D5 /* NVActivityIndicatorPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorPresenter.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Presenter/NVActivityIndicatorPresenter.swift; sourceTree = "<group>"; };
+		85333D987B0E282DAA870C7BC5C32F58 /* NVActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridPulse.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		88BCF9D0B9EC5304329FFE1466B9D205 /* AlertControllerPresentTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertControllerPresentTransition.swift; path = SimpleAlert/AlertControllerPresentTransition.swift; sourceTree = "<group>"; };
+		8B6560C5EB6FD77F6E90E69B3D623538 /* NVActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZag.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
+		8D16E1F13074AA2EB6666F2EC260C48D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9080062FC20E9A666136F128B62A0BC0 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		926AE0DCE3FD6B85B326787E80EFA170 /* NVActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSquareSpin.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
 		933EB1737E6A1DB640DDB347E23BA8E5 /* Pods-WatsonWasteSorter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatsonWasteSorter-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		949EE3B8446E0C70FE873CD94E3CD108 /* Pods-WatsonWasteSorterTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatsonWasteSorterTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		950005095023A5DB7C0ED59811066D5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		973268C6B068E7E89AA6EA16B187426B /* Pods_WatsonWasteSorter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatsonWasteSorter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A51E8FAB99F023B75FBA07D670508E5 /* SimpleAlert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleAlert.xcconfig; sourceTree = "<group>"; };
-		9A520A32E9FD2D068C75986E89B1BE49 /* Info.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Info.swift; path = SimpleAlert/Info.swift; sourceTree = "<group>"; };
+		96DAC77065E24E4B266E97B700E8F7EE /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		9BF92DE800083C5AAC391BFE800457BC /* CameraManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CameraManager-umbrella.h"; sourceTree = "<group>"; };
 		9C8EE1EF58BF9AF41FBF2456471B0159 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DA8115FE4D2D3A5E37A983B3C852F1E /* AlertContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertContentView.swift; path = SimpleAlert/AlertContentView.swift; sourceTree = "<group>"; };
 		9F3411938EE5E462A4222A78DC315B0C /* Pods-WatsonWasteSorterTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatsonWasteSorterTests-frameworks.sh"; sourceTree = "<group>"; };
-		A36DB5EE948D2AF0E811EDFD34156BEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A258645370172B16BDB3F52179AD3AF5 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		A270A7F8150853778C04A3F3160AF241 /* CGFloatExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGFloatExtension.swift; path = SimpleAlert/CGFloatExtension.swift; sourceTree = "<group>"; };
+		A29492C9702E3F4591267DEC6FD2FC08 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		A3E8BCC8220675DC45B0C976E09A0366 /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorShape.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
 		A512EBC7114A8D04B8802685FAED3CA6 /* Pods-WatsonWasteSorterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatsonWasteSorterUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B320AE675A9C7CB410ADCAAEE3CFCD4C /* CameraManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CameraManager.modulemap; sourceTree = "<group>"; };
+		A58427681B724D23BF002029A628D5E1 /* NVActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBlank.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		A699C63B31388D0F9A3A299D16661D69 /* NVActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScale.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
+		A85A7DF52D9D83CC2C6BDE894CB2CA9C /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
+		A9526B48AD794762C570299D3F2955CB /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NVActivityIndicatorView.framework; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB36E5A01C47F96FFE374E6D4F4E020E /* SimpleAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleAlert-prefix.pch"; sourceTree = "<group>"; };
+		AE6B13C04DD264AF6D5B427B0F4CD3D5 /* NVActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseRise.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		AE964FF65C85D6E98F86CC5177BD13DA /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationOrbit.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
+		B35A35002F83B38C1B616ECF1D188A71 /* SimpleAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleAlert-dummy.m"; sourceTree = "<group>"; };
 		B3EA76CC538D42C65AC28163F67B87C0 /* Pods-WatsonWasteSorter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatsonWasteSorter-frameworks.sh"; sourceTree = "<group>"; };
-		B4FCCABD06FA344DC7BD280A2890EB6C /* Pods_WatsonWasteSorterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatsonWasteSorterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BA9A139047AC93C1CA897A7C20D050F6 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		BD9B2720B1CE1B0F2858D3653105BB7C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		BEA3128E9D2D1E5498C03BDAC74A726F /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		C212501A6F7D342D704EEFE86514DDD0 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		B7BF6EB212149BEFA4937B504C100D91 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = SimpleAlert/UIViewExtension.swift; sourceTree = "<group>"; };
+		B8EFEF8D419CD0F3F13A4A3832284DA4 /* NVActivityIndicatorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.xcconfig; sourceTree = "<group>"; };
+		BB1100F37B292E4EF1D924D3B97313A2 /* SimpleAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleAlert.framework; path = SimpleAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07C64E845358B16C00FD76DD6477A38 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		C198919BC2946DC1244F4200BFBC5727 /* ViewControllerAnimatedTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerAnimatedTransition.swift; path = SimpleAlert/ViewControllerAnimatedTransition.swift; sourceTree = "<group>"; };
+		C1A8D1A4AD55EBE459A9D1A4F00B1F6F /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationAudioEqualizer.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
 		C2327AE7C111113F50564147F6E136AE /* Pods-WatsonWasteSorter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatsonWasteSorter.debug.xcconfig"; sourceTree = "<group>"; };
-		C2CF0027BDB4CFCB012BA5573E72011C /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		C3F858BD9C5F0E6F7760B19ECAAE510F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6F42BFD75A4F58E117C9C75B35C0942 /* AlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertAction.swift; path = SimpleAlert/AlertAction.swift; sourceTree = "<group>"; };
-		C72652DD85F4E0571E5BC09D1B2DD66E /* AlertControllerDismissTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertControllerDismissTransition.swift; path = SimpleAlert/AlertControllerDismissTransition.swift; sourceTree = "<group>"; };
+		C25CAD82A53D80529BF5C8394C976EA8 /* NVActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScaleParty.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
+		C2D78B27490EB717EAAEBE3F634B3E0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9EC830DE1E8C900A592E84CFE8E1A98 /* Pods-WatsonWasteSorterUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatsonWasteSorterUITests-dummy.m"; sourceTree = "<group>"; };
-		CA0AFC0028BBCF4EAB49C15E3F1D8726 /* SimpleAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7E75CBDC48170575186BD94510BA3A /* Pods-WatsonWasteSorterTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatsonWasteSorterTests-resources.sh"; sourceTree = "<group>"; };
-		CC1363DDC0E6992B5386CA8CAE1AE4B9 /* SimpleAlert.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SimpleAlert.xib; path = SimpleAlert/SimpleAlert.xib; sourceTree = "<group>"; };
-		CD79BAD731DBE9C010B80276D3D78649 /* CGFloatExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGFloatExtension.swift; path = SimpleAlert/CGFloatExtension.swift; sourceTree = "<group>"; };
-		D4726A1F93B378EA56EAE69B4E6F09B6 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		CDAAE0C30AD29B4F01267EF12BEF7940 /* SimpleAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleAlert-umbrella.h"; sourceTree = "<group>"; };
+		CE0B131056223307A5ED2CF2FE0132D2 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		D3905D8FB139410DA754CC88B39068C1 /* NVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		D43A11015ADC94FB2136B469E778A436 /* CameraManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CameraManager-dummy.m"; sourceTree = "<group>"; };
+		D479674477DB5ED2A06A3CF75F0A8E18 /* CameraManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraManager.swift; path = camera/CameraManager.swift; sourceTree = "<group>"; };
 		D5F139BCE77771EC58688D38C47F8895 /* Pods-WatsonWasteSorterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatsonWasteSorterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D72BD18BE19C516B79F114777CA49C23 /* Pods_WatsonWasteSorterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatsonWasteSorterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DCBEA094DB5970385E8A3AE83EF87F83 /* CameraManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CameraManager-dummy.m"; sourceTree = "<group>"; };
-		DD129DBBBA92393830240840E3178C24 /* SimpleAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleAlert.h; path = SimpleAlert/SimpleAlert.h; sourceTree = "<group>"; };
+		D7A1A8A5C7685B15FE82B46FB011A550 /* NVActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallBeat.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		D7A6A021BDB8841E3DF8A9D4779EC7AC /* AlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertAction.swift; path = SimpleAlert/AlertAction.swift; sourceTree = "<group>"; };
+		DA27A0E9314951106EB30BE49CE58EC0 /* ActionSheetControllerTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetControllerTransition.swift; path = SimpleAlert/ActionSheetControllerTransition.swift; sourceTree = "<group>"; };
 		DDDD2D28A7982466BF9126139FD1E70F /* Pods-WatsonWasteSorter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatsonWasteSorter-acknowledgements.plist"; sourceTree = "<group>"; };
+		DEA4DB7A5E28BA8352A587F6DE74F87B /* SimpleAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SimpleAlert.modulemap; sourceTree = "<group>"; };
 		E011ECF2A9151206B03380D5E0D95BB7 /* Pods-WatsonWasteSorter-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatsonWasteSorter-resources.sh"; sourceTree = "<group>"; };
-		E371A42BCC4CFDF22AF957F7816DEB5E /* ViewControllerAnimatedTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerAnimatedTransition.swift; path = SimpleAlert/ViewControllerAnimatedTransition.swift; sourceTree = "<group>"; };
+		E037CBCCCC56ED7983316BFE3A04814A /* NVActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleMultiple.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
 		E5479A6B42CFFD32451992E1CC885346 /* Pods-WatsonWasteSorterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatsonWasteSorterTests.release.xcconfig"; sourceTree = "<group>"; };
-		EAB8F0702949C77CE667729E1625A20A /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		EA034ED52F81E963A763F0C784C7AAE1 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
+		EC6011012D370E8D37BB1A9480295175 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineSpinFadeLoader.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
 		F2E5F3D98F5934424FE293E8D6179CA8 /* Pods-WatsonWasteSorterUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatsonWasteSorterUITests-umbrella.h"; sourceTree = "<group>"; };
 		F2FDC6237E80AC9B6675A24264663731 /* Pods-WatsonWasteSorter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatsonWasteSorter.release.xcconfig"; sourceTree = "<group>"; };
+		F471D8B3F1EC2DDBCA2DA34BAB582C08 /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridBeat.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
+		F6826D066B97D7AE71E11E6A38269506 /* SimpleAlert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleAlert.xcconfig; sourceTree = "<group>"; };
 		F6DFC35BAB4B6ABA23F5ECEDB3D86B94 /* Pods-WatsonWasteSorterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatsonWasteSorterUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F77BE757D485256B1987D41F8C0F744D /* CameraManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CameraManager.xcconfig; sourceTree = "<group>"; };
+		F738513FCC9AB65FA32405EAAA6CCB70 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		F98D7712F067A7640E6F4D46C50A94CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9DCD37708F57ED2C6CBB7F79780A6F3 /* Pods-WatsonWasteSorterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatsonWasteSorterTests-dummy.m"; sourceTree = "<group>"; };
-		FE04114DEE8608CDD0AF2D922FAD8A26 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FB91904A7C5DF69B47EFC508CC9D1AC7 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotatePulse.swift; path = NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
+		FBC36577E835DB5CE728221347C8FA71 /* ActionSheetControllerPresentTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetControllerPresentTransition.swift; path = SimpleAlert/ActionSheetControllerPresentTransition.swift; sourceTree = "<group>"; };
+		FC703AEC0664AD317C7FBBEFBF9EF58C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		FE61D02803C2EF447F093A50111B9A87 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		FFD5F5C1AB6DD148B5C8C266543A6CB1 /* CameraManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CameraManager.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09003F4B93D7F10E9D9B5A05EA872762 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E7C9FF24310B80A666F3EBAC75FA054 /* Foundation.framework in Frameworks */,
-				9804911890589F34D519B8AA4A9DF02A /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		47C2B8F9C2648A8B5E9FD5D8957ABE13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CEF4C86C36C9ABB4C025AF75FCB42974 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7422870EFEE6F45DC07FE03529204DBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F228C08A0171EA6AC826DC7C1A1DB41 /* Foundation.framework in Frameworks */,
+				D9F0CC4816970CB8BB50DF07397D2D45 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +308,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD4FD8B5704F3E7D5A8921AAF44650CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BA27147B6FB7E9BFA2FD651461A207 /* Foundation.framework in Frameworks */,
+				E86E3CEC056AE6EB9A799755CDED7D28 /* QuartzCore.framework in Frameworks */,
+				384D859EF2E426C5CBCF9434EE9E7F2C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB077D00C5F4CC16913D23452C4A6DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6223D0C1913849B6E826BBA7698C09C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D23B6BB0DBF1EB8F277F42F814DDC165 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,97 +334,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E991B76004268928831D16FF182D0F3A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				266F81F65725AFAC2075C46066447B49 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2323731A3C0999C0D6A39E9E60E94952 /* CameraManager */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5BF19C52AB31C8853A0E9D98AACFCE39 /* CameraManager.swift */,
-				DD8CDDA4DD6EFB4A005441E386D42E05 /* Support Files */,
-			);
-			path = CameraManager;
-			sourceTree = "<group>";
-		};
-		232DCA17D02A4432CFB6713369E36FF8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				732926198C8A846858C29B2E25C7EC32 /* Alamofire.framework */,
-				5835AB4CA9B18AFE6E33A9999BCCBFBF /* CameraManager.framework */,
-				973268C6B068E7E89AA6EA16B187426B /* Pods_WatsonWasteSorter.framework */,
-				D72BD18BE19C516B79F114777CA49C23 /* Pods_WatsonWasteSorterTests.framework */,
-				B4FCCABD06FA344DC7BD280A2890EB6C /* Pods_WatsonWasteSorterUITests.framework */,
-				CA0AFC0028BBCF4EAB49C15E3F1D8726 /* SimpleAlert.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		25AD314D2779C0B28A57863F7974F256 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D87B9049CFBEC5B3108ECDE4CB76F2AE /* Alamofire */,
-				2323731A3C0999C0D6A39E9E60E94952 /* CameraManager */,
-				3E15A714559D92678DF97595754DAC78 /* SimpleAlert */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3E15A714559D92678DF97595754DAC78 /* SimpleAlert */ = {
-			isa = PBXGroup;
-			children = (
-				8CA2129D6FB2EA0758406F630D941547 /* ActionSheetControllerDismissTransition.swift */,
-				0BC96CAF9513882437AC16B441003747 /* ActionSheetControllerPresentTransition.swift */,
-				8C73CC7F0E30D55C968AD2862F017975 /* ActionSheetControllerTransition.swift */,
-				C6F42BFD75A4F58E117C9C75B35C0942 /* AlertAction.swift */,
-				9DA8115FE4D2D3A5E37A983B3C852F1E /* AlertContentView.swift */,
-				C72652DD85F4E0571E5BC09D1B2DD66E /* AlertControllerDismissTransition.swift */,
-				4CC2C1466525FABBD790577CA5B99357 /* AlertControllerPresentTransition.swift */,
-				CD79BAD731DBE9C010B80276D3D78649 /* CGFloatExtension.swift */,
-				9A520A32E9FD2D068C75986E89B1BE49 /* Info.swift */,
-				DD129DBBBA92393830240840E3178C24 /* SimpleAlert.h */,
-				25599FC4F5D9F6C6A953124740E447CD /* SimpleAlert.swift */,
-				CC1363DDC0E6992B5386CA8CAE1AE4B9 /* SimpleAlert.xib */,
-				12BC7048722B38CEF8A0593E470ACB0C /* TextField.swift */,
-				69998AB9DE29F0144A18970E9ED30B9C /* UIAlertControllerStyleExtension.swift */,
-				78FC4D1EBF3D45C9EA49B3BDA9729122 /* UIViewExtension.swift */,
-				E371A42BCC4CFDF22AF957F7816DEB5E /* ViewControllerAnimatedTransition.swift */,
-				DAFDF9847769F990DC34C77D4B54354A /* Support Files */,
-			);
-			path = SimpleAlert;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+				93A319F2C1969B7AA0B17444A3F8BA22 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+		138C7E57FB871DA0A1FBB43CCB69C73F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+				F98D7712F067A7640E6F4D46C50A94CB /* Info.plist */,
+				565723A7A999CAE6CA3167A23F5965BF /* NVActivityIndicatorView.modulemap */,
+				B8EFEF8D419CD0F3F13A4A3832284DA4 /* NVActivityIndicatorView.xcconfig */,
+				40BEB1C38EBF41C7B5C0A137EA093334 /* NVActivityIndicatorView-dummy.m */,
+				D3905D8FB139410DA754CC88B39068C1 /* NVActivityIndicatorView-prefix.pch */,
+				3BA028FE233A779D0597F7D8F89D856D /* NVActivityIndicatorView-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/NVActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		67ADA79FE6DE6A0D54E74DE0362CEA58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C3F8F848DA90697CB03157512E08CC0 /* Alamofire.framework */,
+				62BC8E563B6B126A20B84604FB3D1B4E /* CameraManager.framework */,
+				A9526B48AD794762C570299D3F2955CB /* NVActivityIndicatorView.framework */,
+				1FD54E5C8236828827DF8DB9D5257BAE /* Pods_WatsonWasteSorter.framework */,
+				461F8363F1F192B836966C7FBE168725 /* Pods_WatsonWasteSorterTests.framework */,
+				128B6F42704EF97AC50F868095AAAA0C /* Pods_WatsonWasteSorterUITests.framework */,
+				BB1100F37B292E4EF1D924D3B97313A2 /* SimpleAlert.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		762448B0958182DE3B6D63327D4939B5 /* NVActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				86F61A41C26599ACFE563854C77B08A8 /* Presenter */,
+				138C7E57FB871DA0A1FBB43CCB69C73F /* Support Files */,
+			);
+			name = NVActivityIndicatorView;
+			path = NVActivityIndicatorView;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				25AD314D2779C0B28A57863F7974F256 /* Pods */,
-				232DCA17D02A4432CFB6713369E36FF8 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				87D9269674FEF69C1249C649CAAB357B /* Pods */,
+				67ADA79FE6DE6A0D54E74DE0362CEA58 /* Products */,
 				B92554294DF9699946F039D071639A6A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -335,6 +412,61 @@
 			path = "Target Support Files/Pods-WatsonWasteSorterTests";
 			sourceTree = "<group>";
 		};
+		86F61A41C26599ACFE563854C77B08A8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C1A8D1A4AD55EBE459A9D1A4F00B1F6F /* NVActivityIndicatorAnimationAudioEqualizer.swift */,
+				D7A1A8A5C7685B15FE82B46FB011A550 /* NVActivityIndicatorAnimationBallBeat.swift */,
+				71983F499A62353F4EBFDCA4659C69B3 /* NVActivityIndicatorAnimationBallClipRotate.swift */,
+				093CA521D4036ED7A16ADC4F019A25DA /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+				FB91904A7C5DF69B47EFC508CC9D1AC7 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */,
+				F471D8B3F1EC2DDBCA2DA34BAB582C08 /* NVActivityIndicatorAnimationBallGridBeat.swift */,
+				85333D987B0E282DAA870C7BC5C32F58 /* NVActivityIndicatorAnimationBallGridPulse.swift */,
+				3973644D82FAFEEB4810B0A9821D1E0F /* NVActivityIndicatorAnimationBallPulse.swift */,
+				AE6B13C04DD264AF6D5B427B0F4CD3D5 /* NVActivityIndicatorAnimationBallPulseRise.swift */,
+				65C938E2390CE2208967A9938A5DFBA6 /* NVActivityIndicatorAnimationBallPulseSync.swift */,
+				67F030659C7F1943D2C09A400649341E /* NVActivityIndicatorAnimationBallRotate.swift */,
+				7F7FFFE2B6103035AC0CD16BDA66749D /* NVActivityIndicatorAnimationBallRotateChase.swift */,
+				66B33D58763592A293EF1AFEEA635606 /* NVActivityIndicatorAnimationBallScale.swift */,
+				E037CBCCCC56ED7983316BFE3A04814A /* NVActivityIndicatorAnimationBallScaleMultiple.swift */,
+				0EA62541B92F563129AD50C8887723D6 /* NVActivityIndicatorAnimationBallScaleRipple.swift */,
+				49DB00BBDB611F3F63263AE39062769E /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
+				EA034ED52F81E963A763F0C784C7AAE1 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */,
+				4A8090F7AEE2B0F83810C8F8D99FF6D6 /* NVActivityIndicatorAnimationBallTrianglePath.swift */,
+				8B6560C5EB6FD77F6E90E69B3D623538 /* NVActivityIndicatorAnimationBallZigZag.swift */,
+				30709EC2FD07CAF8D4D4C9597B90413D /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */,
+				A58427681B724D23BF002029A628D5E1 /* NVActivityIndicatorAnimationBlank.swift */,
+				78416C68A51F644D25250E04BDE4C722 /* NVActivityIndicatorAnimationCubeTransition.swift */,
+				7F5823C0C6B749B5AF3F6D6BA2150C25 /* NVActivityIndicatorAnimationDelegate.swift */,
+				A699C63B31388D0F9A3A299D16661D69 /* NVActivityIndicatorAnimationLineScale.swift */,
+				C25CAD82A53D80529BF5C8394C976EA8 /* NVActivityIndicatorAnimationLineScaleParty.swift */,
+				09B56591BB208A89B3F17EA883F633E7 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */,
+				A85A7DF52D9D83CC2C6BDE894CB2CA9C /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
+				EC6011012D370E8D37BB1A9480295175 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				AE964FF65C85D6E98F86CC5177BD13DA /* NVActivityIndicatorAnimationOrbit.swift */,
+				069D95C6B8C80157AA5F09CFA1338421 /* NVActivityIndicatorAnimationPacman.swift */,
+				5CBA7924CDBCBA5B75205961C4BB9C07 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
+				926AE0DCE3FD6B85B326787E80EFA170 /* NVActivityIndicatorAnimationSquareSpin.swift */,
+				217420303E3127E5015FA28EB68046E9 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
+				8405A154116659BC0A6B6E45774CF0D5 /* NVActivityIndicatorPresenter.swift */,
+				A3E8BCC8220675DC45B0C976E09A0366 /* NVActivityIndicatorShape.swift */,
+				4B3258E7BD67B2A79151EA96FA18E510 /* NVActivityIndicatorView.swift */,
+				5E344B463CE035FE23C203B3474EA4D8 /* NVActivityIndicatorViewable.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		87D9269674FEF69C1249C649CAAB357B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D10E5C9EC8E308AB6A6109E490405035 /* Alamofire */,
+				9D56BD7BC4D7EACA19DD5E229DA2A776 /* CameraManager */,
+				762448B0958182DE3B6D63327D4939B5 /* NVActivityIndicatorView */,
+				B44B7A2627CE6F9B19F1FD02F372FB5E /* SimpleAlert */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8C508E98B9D646096F36C3F8347E88BD /* Pods-WatsonWasteSorter */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,18 +485,49 @@
 			path = "Target Support Files/Pods-WatsonWasteSorter";
 			sourceTree = "<group>";
 		};
-		A172F6A08337C7702A88CE6E84F4D1D0 /* Support Files */ = {
+		93A319F2C1969B7AA0B17444A3F8BA22 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BEA3128E9D2D1E5498C03BDAC74A726F /* Alamofire.modulemap */,
-				D4726A1F93B378EA56EAE69B4E6F09B6 /* Alamofire.xcconfig */,
-				66E972973B256D35097FF84652F7CAA8 /* Alamofire-dummy.m */,
-				0F55B83FB3451CA25A92BA77CCA80D6D /* Alamofire-prefix.pch */,
-				C212501A6F7D342D704EEFE86514DDD0 /* Alamofire-umbrella.h */,
-				A36DB5EE948D2AF0E811EDFD34156BEC /* Info.plist */,
+				33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */,
+				FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */,
+				3917A50EB224EEDBC66971700D698782 /* UIKit.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9D56BD7BC4D7EACA19DD5E229DA2A776 /* CameraManager */ = {
+			isa = PBXGroup;
+			children = (
+				D479674477DB5ED2A06A3CF75F0A8E18 /* CameraManager.swift */,
+				EA384AB4083F1694BEE9B1970AD669C9 /* Support Files */,
+			);
+			name = CameraManager;
+			path = CameraManager;
+			sourceTree = "<group>";
+		};
+		B44B7A2627CE6F9B19F1FD02F372FB5E /* SimpleAlert */ = {
+			isa = PBXGroup;
+			children = (
+				17790EE949EA9CBEADA801BCE85683F0 /* ActionSheetControllerDismissTransition.swift */,
+				FBC36577E835DB5CE728221347C8FA71 /* ActionSheetControllerPresentTransition.swift */,
+				DA27A0E9314951106EB30BE49CE58EC0 /* ActionSheetControllerTransition.swift */,
+				D7A6A021BDB8841E3DF8A9D4779EC7AC /* AlertAction.swift */,
+				2C55CF6890E84085DE8AE0303154AC00 /* AlertContentView.swift */,
+				359B3E5B2BC3C525787357405A5654DB /* AlertControllerDismissTransition.swift */,
+				88BCF9D0B9EC5304329FFE1466B9D205 /* AlertControllerPresentTransition.swift */,
+				A270A7F8150853778C04A3F3160AF241 /* CGFloatExtension.swift */,
+				041232F7E89EB2B43151B6519E6C1024 /* Info.swift */,
+				196FBE215DFDAFAE08D5AD1A8F85CCB1 /* SimpleAlert.h */,
+				5C241D43EF6160AEBE90852DC15B8C9A /* SimpleAlert.swift */,
+				1E389C42E3CE40970A77EED6D889FEB2 /* SimpleAlert.xib */,
+				6BD6A2E2909C4825B74EACD2C4B894C2 /* TextField.swift */,
+				697EBFDFA7269CD106B249671B875221 /* UIAlertControllerStyleExtension.swift */,
+				B7BF6EB212149BEFA4937B504C100D91 /* UIViewExtension.swift */,
+				C198919BC2946DC1244F4200BFBC5727 /* ViewControllerAnimatedTransition.swift */,
+				EDBF2D3333DC649E7F3F73803AB2CEF2 /* Support Files */,
+			);
+			name = SimpleAlert;
+			path = SimpleAlert;
 			sourceTree = "<group>";
 		};
 		B92554294DF9699946F039D071639A6A /* Targets Support Files */ = {
@@ -395,57 +558,72 @@
 			path = "Target Support Files/Pods-WatsonWasteSorterUITests";
 			sourceTree = "<group>";
 		};
-		D87B9049CFBEC5B3108ECDE4CB76F2AE /* Alamofire */ = {
+		D10E5C9EC8E308AB6A6109E490405035 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				13EC955EF196882D69697DD02A63403B /* AFError.swift */,
-				2753CF95809827CF52E55D2D087BBC34 /* Alamofire.swift */,
-				C2CF0027BDB4CFCB012BA5573E72011C /* DispatchQueue+Alamofire.swift */,
-				3D88CF14142EC32A03C0F763170613AA /* MultipartFormData.swift */,
-				49FFEBF916ED703C3A8A0FBD5F96D3CD /* NetworkReachabilityManager.swift */,
-				322533E62550AA43D20AFB896449DAE8 /* Notifications.swift */,
-				931A8788DE18880583484427549420DE /* ParameterEncoding.swift */,
-				48CEF6111F6481D0CE2CDCDF11323F32 /* Request.swift */,
-				2F4085A12D4272C7D47C172049334246 /* Response.swift */,
-				BD9B2720B1CE1B0F2858D3653105BB7C /* ResponseSerialization.swift */,
-				3E153A573FF15D20960EAD380319BE55 /* Result.swift */,
-				EAB8F0702949C77CE667729E1625A20A /* ServerTrustPolicy.swift */,
-				88654D16E33A48E144CB3FB3BCDC7064 /* SessionDelegate.swift */,
-				619BB04042A00599F50D2D051F93B787 /* SessionManager.swift */,
-				419246B0D1A17C3B79660F98836A6328 /* TaskDelegate.swift */,
-				FE04114DEE8608CDD0AF2D922FAD8A26 /* Timeline.swift */,
-				BA9A139047AC93C1CA897A7C20D050F6 /* Validation.swift */,
-				A172F6A08337C7702A88CE6E84F4D1D0 /* Support Files */,
+				F738513FCC9AB65FA32405EAAA6CCB70 /* AFError.swift */,
+				0C32F0B1CEE23F48964D711720BD2ECA /* Alamofire.swift */,
+				96DAC77065E24E4B266E97B700E8F7EE /* DispatchQueue+Alamofire.swift */,
+				75F1948D6B89E783504EEBDA4EDAEF01 /* MultipartFormData.swift */,
+				290FFA30C2DE3FABC8833C15FE1B6F1F /* NetworkReachabilityManager.swift */,
+				72DF7A7AFB62FD080ABA9D2819C478CA /* Notifications.swift */,
+				05C3D77E91DDBDB19A5A03146BC30A2D /* ParameterEncoding.swift */,
+				A258645370172B16BDB3F52179AD3AF5 /* Request.swift */,
+				7C2BBC808A2B2831D56E58873DCDFE3B /* Response.swift */,
+				9080062FC20E9A666136F128B62A0BC0 /* ResponseSerialization.swift */,
+				212C35A08FD1B35D78A35479C9E50FB3 /* Result.swift */,
+				2BC145779AD38719739477FEFF7170DB /* ServerTrustPolicy.swift */,
+				A29492C9702E3F4591267DEC6FD2FC08 /* SessionDelegate.swift */,
+				C07C64E845358B16C00FD76DD6477A38 /* SessionManager.swift */,
+				5271BF7DECDBFF3AA2558641775B7A6B /* TaskDelegate.swift */,
+				694F49107D58A0EA46442B57DC51836A /* Timeline.swift */,
+				CE0B131056223307A5ED2CF2FE0132D2 /* Validation.swift */,
+				F5B61FF8DD9D8558392FBF4964E63096 /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		DAFDF9847769F990DC34C77D4B54354A /* Support Files */ = {
+		EA384AB4083F1694BEE9B1970AD669C9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C3F858BD9C5F0E6F7760B19ECAAE510F /* Info.plist */,
-				34EE85795A152EF1EE08D9AB7F397FF9 /* SimpleAlert.modulemap */,
-				9A51E8FAB99F023B75FBA07D670508E5 /* SimpleAlert.xcconfig */,
-				279290B0C8EB90DFA9BD202E6C79BD2D /* SimpleAlert-dummy.m */,
-				8415443291D242419DE57E286CFD83AF /* SimpleAlert-prefix.pch */,
-				52EBF37B110C4AC0E40862142520AF6F /* SimpleAlert-umbrella.h */,
+				FFD5F5C1AB6DD148B5C8C266543A6CB1 /* CameraManager.modulemap */,
+				5A67253A7CC7F8B5207E1C62A9C92BD1 /* CameraManager.xcconfig */,
+				D43A11015ADC94FB2136B469E778A436 /* CameraManager-dummy.m */,
+				0089AE5F0C467BD73DE7186B1A797FD3 /* CameraManager-prefix.pch */,
+				9BF92DE800083C5AAC391BFE800457BC /* CameraManager-umbrella.h */,
+				402001014C97DBD9473CFD56F1547830 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CameraManager";
+			sourceTree = "<group>";
+		};
+		EDBF2D3333DC649E7F3F73803AB2CEF2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D16E1F13074AA2EB6666F2EC260C48D /* Info.plist */,
+				DEA4DB7A5E28BA8352A587F6DE74F87B /* SimpleAlert.modulemap */,
+				F6826D066B97D7AE71E11E6A38269506 /* SimpleAlert.xcconfig */,
+				B35A35002F83B38C1B616ECF1D188A71 /* SimpleAlert-dummy.m */,
+				AB36E5A01C47F96FFE374E6D4F4E020E /* SimpleAlert-prefix.pch */,
+				CDAAE0C30AD29B4F01267EF12BEF7940 /* SimpleAlert-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SimpleAlert";
 			sourceTree = "<group>";
 		};
-		DD8CDDA4DD6EFB4A005441E386D42E05 /* Support Files */ = {
+		F5B61FF8DD9D8558392FBF4964E63096 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B320AE675A9C7CB410ADCAAEE3CFCD4C /* CameraManager.modulemap */,
-				F77BE757D485256B1987D41F8C0F744D /* CameraManager.xcconfig */,
-				DCBEA094DB5970385E8A3AE83EF87F83 /* CameraManager-dummy.m */,
-				4D8B3E2C2139BAEB253AE02263FF147A /* CameraManager-prefix.pch */,
-				52DEB4AFB7CE18FEAB6D0BA0D42EEE67 /* CameraManager-umbrella.h */,
-				950005095023A5DB7C0ED59811066D5A /* Info.plist */,
+				FE61D02803C2EF447F093A50111B9A87 /* Alamofire.modulemap */,
+				144AF2CAC57A87C0DD6F13E873856C8D /* Alamofire.xcconfig */,
+				37C975C44FBEB082D5AADA7D5CFFCF82 /* Alamofire-dummy.m */,
+				5876D134CA267C7BA0B139983E545E0B /* Alamofire-prefix.pch */,
+				FC703AEC0664AD317C7FBBEFBF9EF58C /* Alamofire-umbrella.h */,
+				C2D78B27490EB717EAAEBE3F634B3E0D /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/CameraManager";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,20 +645,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		229208EEC18684ECC320302269049D7D /* Headers */ = {
+		7C17ABD66D1B8D9607F0EB8247AD9C26 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881E11FFFB6FF1433CE3F4AF9B94033E /* Pods-WatsonWasteSorter-umbrella.h in Headers */,
+				D3720BFA2E5095AC731CDD87A8EE4BC8 /* SimpleAlert-umbrella.h in Headers */,
+				0A997B95440D068B3D3421236C3C2DFC /* SimpleAlert.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34C6A898609F22BFB10A52EE371489D2 /* Headers */ = {
+		848BEA2CA37ED8D2034CC1A89E170B7C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9115850EEB06756650E44892F9E49FF9 /* SimpleAlert-umbrella.h in Headers */,
-				EB4F36090E87AFABA260EE7E9D263246 /* SimpleAlert.h in Headers */,
+				6C87A072AB4829034A498BA236159E95 /* Pods-WatsonWasteSorter-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +667,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5719D777F46F7C6F689C6898EA54F524 /* CameraManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A013C4F3B47D24CD642642008BB80561 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D961959484FC1FF71D46A27E889A75A /* NVActivityIndicatorView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,24 +689,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		80BC80FA4F8CCF62FC4882B63DBD3777 /* Pods-WatsonWasteSorter */ = {
+		3EDFE4052B5DE7D509935AC0774CB135 /* NVActivityIndicatorView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A20B75450710A7A611528A409ED5FC5 /* Build configuration list for PBXNativeTarget "Pods-WatsonWasteSorter" */;
+			buildConfigurationList = 35DF108162D4FB76F4C98C08DEA245C3 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */;
 			buildPhases = (
-				F80C52A3AD1692E15B1FB9358E70B7AB /* Sources */,
-				E991B76004268928831D16FF182D0F3A /* Frameworks */,
-				229208EEC18684ECC320302269049D7D /* Headers */,
+				39CB1D83E4502874B6CA315A7053B40B /* Sources */,
+				AD4FD8B5704F3E7D5A8921AAF44650CB /* Frameworks */,
+				A013C4F3B47D24CD642642008BB80561 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				563D0987F4DD15F53559525D591DAFBD /* PBXTargetDependency */,
-				D0BD19785CC2ACF35A1101B0692C3759 /* PBXTargetDependency */,
-				B78F827009AE4CC4E7E68E833EF409F0 /* PBXTargetDependency */,
+			);
+			name = NVActivityIndicatorView;
+			productName = NVActivityIndicatorView;
+			productReference = A9526B48AD794762C570299D3F2955CB /* NVActivityIndicatorView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60D81846649B2B659D77BD7E654CFDF9 /* Pods-WatsonWasteSorter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05717645F39CA52AF91863376E419C67 /* Build configuration list for PBXNativeTarget "Pods-WatsonWasteSorter" */;
+			buildPhases = (
+				E57E5FEA95F5600E8711F308216C2761 /* Sources */,
+				CEB077D00C5F4CC16913D23452C4A6DB /* Frameworks */,
+				848BEA2CA37ED8D2034CC1A89E170B7C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526DFF726EA1C7ACBEC928DAE74970BA /* PBXTargetDependency */,
+				8DA01A2078AFEF00D768D8EAAE5B3DC8 /* PBXTargetDependency */,
+				B28A959F6DE1A39F3647E0650FF6AEE4 /* PBXTargetDependency */,
+				537A16D135F090ED57D9FD848C990984 /* PBXTargetDependency */,
 			);
 			name = "Pods-WatsonWasteSorter";
 			productName = "Pods-WatsonWasteSorter";
-			productReference = 973268C6B068E7E89AA6EA16B187426B /* Pods_WatsonWasteSorter.framework */;
+			productReference = 1FD54E5C8236828827DF8DB9D5257BAE /* Pods_WatsonWasteSorter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -537,7 +741,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 732926198C8A846858C29B2E25C7EC32 /* Alamofire.framework */;
+			productReference = 3C3F8F848DA90697CB03157512E08CC0 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B0861DBDBFF6B07BCB582BBFC7A15813 /* Pods-WatsonWasteSorterTests */ = {
@@ -554,16 +758,16 @@
 			);
 			name = "Pods-WatsonWasteSorterTests";
 			productName = "Pods-WatsonWasteSorterTests";
-			productReference = D72BD18BE19C516B79F114777CA49C23 /* Pods_WatsonWasteSorterTests.framework */;
+			productReference = 461F8363F1F192B836966C7FBE168725 /* Pods_WatsonWasteSorterTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DA5F05E35FB8869F15ACBC1E6377E8DE /* SimpleAlert */ = {
+		DC2EB4175332AE391B1C565998E901F2 /* SimpleAlert */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E408AC6AB0B20E45713D743DA3F009D9 /* Build configuration list for PBXNativeTarget "SimpleAlert" */;
+			buildConfigurationList = 64220F7AC64B971298D22BDDD9853809 /* Build configuration list for PBXNativeTarget "SimpleAlert" */;
 			buildPhases = (
-				C0B227375317AE977B9FE30223D8352F /* Sources */,
-				09003F4B93D7F10E9D9B5A05EA872762 /* Frameworks */,
-				34C6A898609F22BFB10A52EE371489D2 /* Headers */,
+				CCB64859A4168EDB877BB050DA581A78 /* Sources */,
+				7422870EFEE6F45DC07FE03529204DBF /* Frameworks */,
+				7C17ABD66D1B8D9607F0EB8247AD9C26 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -571,7 +775,7 @@
 			);
 			name = SimpleAlert;
 			productName = SimpleAlert;
-			productReference = CA0AFC0028BBCF4EAB49C15E3F1D8726 /* SimpleAlert.framework */;
+			productReference = BB1100F37B292E4EF1D924D3B97313A2 /* SimpleAlert.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DD282AEB149DD6FA56F4BB9F521FB8E0 /* Pods-WatsonWasteSorterUITests */ = {
@@ -588,7 +792,7 @@
 			);
 			name = "Pods-WatsonWasteSorterUITests";
 			productName = "Pods-WatsonWasteSorterUITests";
-			productReference = B4FCCABD06FA344DC7BD280A2890EB6C /* Pods_WatsonWasteSorterUITests.framework */;
+			productReference = 128B6F42704EF97AC50F868095AAAA0C /* Pods_WatsonWasteSorterUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FFBE657764C9F6D8E01DDE2949BD2E64 /* CameraManager */ = {
@@ -605,7 +809,7 @@
 			);
 			name = CameraManager;
 			productName = CameraManager;
-			productReference = 5835AB4CA9B18AFE6E33A9999BCCBFBF /* CameraManager.framework */;
+			productReference = 62BC8E563B6B126A20B84604FB3D1B4E /* CameraManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -615,7 +819,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -625,16 +829,17 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 232DCA17D02A4432CFB6713369E36FF8 /* Products */;
+			productRefGroup = 67ADA79FE6DE6A0D54E74DE0362CEA58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
 				FFBE657764C9F6D8E01DDE2949BD2E64 /* CameraManager */,
-				80BC80FA4F8CCF62FC4882B63DBD3777 /* Pods-WatsonWasteSorter */,
+				3EDFE4052B5DE7D509935AC0774CB135 /* NVActivityIndicatorView */,
+				60D81846649B2B659D77BD7E654CFDF9 /* Pods-WatsonWasteSorter */,
 				B0861DBDBFF6B07BCB582BBFC7A15813 /* Pods-WatsonWasteSorterTests */,
 				DD282AEB149DD6FA56F4BB9F521FB8E0 /* Pods-WatsonWasteSorterUITests */,
-				DA5F05E35FB8869F15ACBC1E6377E8DE /* SimpleAlert */,
+				DC2EB4175332AE391B1C565998E901F2 /* SimpleAlert */,
 			);
 		};
 /* End PBXProject section */
@@ -682,26 +887,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0B227375317AE977B9FE30223D8352F /* Sources */ = {
+		39CB1D83E4502874B6CA315A7053B40B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B484B12A6830E65D298992E4C1CFB532 /* ActionSheetControllerDismissTransition.swift in Sources */,
-				E752EF92A954E538419839D6A6903313 /* ActionSheetControllerPresentTransition.swift in Sources */,
-				489264360DC477BC9FD1944F5CDF2C29 /* ActionSheetControllerTransition.swift in Sources */,
-				747377BC2B437AE77EFDBE4BC55FD495 /* AlertAction.swift in Sources */,
-				478390E59DD646306D2307FA0A3306A5 /* AlertContentView.swift in Sources */,
-				D3E42C9B1323470E9DEEFDA29E2BF7B1 /* AlertControllerDismissTransition.swift in Sources */,
-				F325188DC578B7980F47809DB58D3A47 /* AlertControllerPresentTransition.swift in Sources */,
-				7725635ED22DF383AD71B3C18729BF37 /* CGFloatExtension.swift in Sources */,
-				AD3B874A1698B7F323F5A5F50889379F /* Info.swift in Sources */,
-				8633289B539FF98D896D27B690120445 /* SimpleAlert-dummy.m in Sources */,
-				FDA27EA4950AB931505953B6C269813F /* SimpleAlert.swift in Sources */,
-				5872C4C1176DF356B2ADE978FCD7A44B /* SimpleAlert.xib in Sources */,
-				5F51ED3CF5DFA2CA9ED047C64EAD43DC /* TextField.swift in Sources */,
-				96723752676756F5E6F2129F72664D32 /* UIAlertControllerStyleExtension.swift in Sources */,
-				D49CBF179B22EAE1825DF2E009EAF674 /* UIViewExtension.swift in Sources */,
-				7079D449EB56FFE1BA7D7E67CDDEDDC7 /* ViewControllerAnimatedTransition.swift in Sources */,
+				911F8A697E6802F62098E1060A40AB03 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
+				66EA819AEC38557662BD80187474A9A0 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
+				454D6945388874871E2F0F9B04A47E70 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				D9B97EA5FD4BA034331BAD9A8FE8EDB7 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
+				F942269CF2818EBEAAE00D3B14B269C9 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
+				08C3F808630C144F90685E34BCED8DEE /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
+				AC6783DA5C8F57783CF23C50613135C4 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				78273217402C4A644B3EBC3B149EE840 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */,
+				703E23E87D370D269652E02CC4D0DB13 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
+				87BCF1622F215BD96520BB64E5E94091 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
+				8501C56A979C09DC2700800FD342DB2D /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
+				42541268F9036CAFE8682204ABD77AA6 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				CC8F62CE6BBE9CE9C7EF7742A459963C /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
+				9228D5B93079B71B8EA798A37817E5B0 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
+				8B748A0C087F2037A1C14E9172BF0014 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
+				E3CA84084C1AA5EE7BC3024B0904AF8F /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
+				F79C2763FF45442523EB4606AC148271 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
+				240FA1CEFEB5E3A5F4D04CE4E25E8B82 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				7FEE370B6529A919640173C97006CFF1 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
+				A14036702B60EE3DF47A696F9272F825 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
+				FB1B6360412EEF5120AE6334681C1EFD /* NVActivityIndicatorAnimationBlank.swift in Sources */,
+				AEC875604B480BE726BA6CE18DB5AA6F /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
+				DB16138DB7C9333B4CCA228657782131 /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
+				EAB306F3EF9527904C5D56342697B84C /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
+				442D3B54A30680D61EDF2192191A990B /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */,
+				307D313A0CE0CFC89C44B5795ED927F3 /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
+				21DCFB78A4DB6ED465FC45945582E8CD /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
+				7F4A6A5D53B89FD3053C04833838B04A /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				EFAF4BB9DF37F64540764747D9289C2E /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
+				668E5D4DECE5E4A8E8D9E6D47164D194 /* NVActivityIndicatorAnimationPacman.swift in Sources */,
+				4242BC17D3F6E147330C75DD9C737E97 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
+				BE26A278F95E094311F6E1B1FAD285F9 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */,
+				CDD14F56BAE0F8921201B54E261ABF85 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				D16A25127CB40B0CB1757FC1F124D05D /* NVActivityIndicatorPresenter.swift in Sources */,
+				5A0E6739E53AC36665276ABE5F692693 /* NVActivityIndicatorShape.swift in Sources */,
+				4D7F64AC19454C57F7C900664F31EC04 /* NVActivityIndicatorView-dummy.m in Sources */,
+				99DDD3A9627493DEC8152E8589525F55 /* NVActivityIndicatorView.swift in Sources */,
+				33A32827521D6AB7BA157451DA040C07 /* NVActivityIndicatorViewable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB64859A4168EDB877BB050DA581A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B862B185E6DBE2072B134F1542226232 /* ActionSheetControllerDismissTransition.swift in Sources */,
+				6F6F0829AC8AC2E8BC57A5054DD13E8E /* ActionSheetControllerPresentTransition.swift in Sources */,
+				1FDD8BFC5854829DE4D832CA3DB54F71 /* ActionSheetControllerTransition.swift in Sources */,
+				F181F678CC0FF847B73F5D7C767BF6A4 /* AlertAction.swift in Sources */,
+				570B956E4FA8AE91AB41A0D149C4C197 /* AlertContentView.swift in Sources */,
+				827FF757B2632C3571BC6384CE33AE18 /* AlertControllerDismissTransition.swift in Sources */,
+				1F82D6EB5298B115643E5AF2832E3F4C /* AlertControllerPresentTransition.swift in Sources */,
+				B4A716C58335928C73DDFF23358D30B2 /* CGFloatExtension.swift in Sources */,
+				EEBA9F51FEC4CDE1172BBF7D09CCD83A /* Info.swift in Sources */,
+				43B4894A9BCC0E34F484E3D3BF01D7CE /* SimpleAlert-dummy.m in Sources */,
+				F956FE49B2FA6A44AF9D9885FD5DDD94 /* SimpleAlert.swift in Sources */,
+				565EB166ECD22A6F3062009C3C0B8A8C /* SimpleAlert.xib in Sources */,
+				EACE8F8DDD60D63326C2DC0AF71338C8 /* TextField.swift in Sources */,
+				EA06CA2F2AA43822BB4FAEE1B7911F20 /* UIAlertControllerStyleExtension.swift in Sources */,
+				658DEEE0063EF5D5F9E739140DB43D8B /* UIViewExtension.swift in Sources */,
+				2F8B8A9FE8468F9B411A6F4A7A5BBB97 /* ViewControllerAnimatedTransition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57E5FEA95F5600E8711F308216C2761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E553CBA221B9B52102F5D9CA1906CE /* Pods-WatsonWasteSorter-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,41 +971,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F80C52A3AD1692E15B1FB9358E70B7AB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA503431821665300677E7EA0CF0E210 /* Pods-WatsonWasteSorter-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		563D0987F4DD15F53559525D591DAFBD /* PBXTargetDependency */ = {
+		526DFF726EA1C7ACBEC928DAE74970BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 0BE06A61966AB55A3D5D3F3EC6A39D12 /* PBXContainerItemProxy */;
+			targetProxy = BB86BBAD88DE55F228595DD6CD56DDD0 /* PBXContainerItemProxy */;
 		};
-		B78F827009AE4CC4E7E68E833EF409F0 /* PBXTargetDependency */ = {
+		537A16D135F090ED57D9FD848C990984 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimpleAlert;
-			target = DA5F05E35FB8869F15ACBC1E6377E8DE /* SimpleAlert */;
-			targetProxy = 504F2C63E7EF0132E0D1E827F460A7DC /* PBXContainerItemProxy */;
+			target = DC2EB4175332AE391B1C565998E901F2 /* SimpleAlert */;
+			targetProxy = 5E2DD2824803F2B5185F118A051C87A0 /* PBXContainerItemProxy */;
 		};
-		D0BD19785CC2ACF35A1101B0692C3759 /* PBXTargetDependency */ = {
+		8DA01A2078AFEF00D768D8EAAE5B3DC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CameraManager;
 			target = FFBE657764C9F6D8E01DDE2949BD2E64 /* CameraManager */;
-			targetProxy = 6C0A50885BFF918DDB52EF98FE94E94F /* PBXContainerItemProxy */;
+			targetProxy = 8430126D05B9E43B4801D442DDB4CF33 /* PBXContainerItemProxy */;
+		};
+		B28A959F6DE1A39F3647E0650FF6AEE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NVActivityIndicatorView;
+			target = 3EDFE4052B5DE7D509935AC0774CB135 /* NVActivityIndicatorView */;
+			targetProxy = 9044B0652FFB1D29936F55EBC3EA16CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0B0A7F2F19148AD6B3C6B893A1753401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2FDC6237E80AC9B6675A24264663731 /* Pods-WatsonWasteSorter.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatsonWasteSorter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatsonWasteSorter/Pods-WatsonWasteSorter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WatsonWasteSorter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1DF43F8304D50526FDC1C3BF29F56433 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F77BE757D485256B1987D41F8C0F744D /* CameraManager.xcconfig */;
+			baseConfigurationReference = 5A67253A7CC7F8B5207E1C62A9C92BD1 /* CameraManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -776,9 +1066,9 @@
 			};
 			name = Debug;
 		};
-		2AA147E08BF8BAD40FE948B384628F85 /* Release */ = {
+		23512CA2F944D060505C1DD1059A2212 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2FDC6237E80AC9B6675A24264663731 /* Pods-WatsonWasteSorter.release.xcconfig */;
+			baseConfigurationReference = B8EFEF8D419CD0F3F13A4A3832284DA4 /* NVActivityIndicatorView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -789,20 +1079,50 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WatsonWasteSorter/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WatsonWasteSorter/Pods-WatsonWasteSorter.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WatsonWasteSorter;
+				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
+				PRODUCT_NAME = NVActivityIndicatorView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		23896A4D4D61E587F4497AF738138C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6826D066B97D7AE71E11E6A38269506 /* SimpleAlert.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleAlert/SimpleAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleAlert/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleAlert/SimpleAlert.modulemap";
+				PRODUCT_NAME = SimpleAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -870,9 +1190,9 @@
 			};
 			name = Debug;
 		};
-		5D0FEF6B4CFF8281B6CAD65F85D7036A /* Debug */ = {
+		6828CF04FAE2FA63E19937489C58E2B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A51E8FAB99F023B75FBA07D670508E5 /* SimpleAlert.xcconfig */;
+			baseConfigurationReference = B8EFEF8D419CD0F3F13A4A3832284DA4 /* NVActivityIndicatorView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -883,18 +1203,52 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SimpleAlert/SimpleAlert-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimpleAlert/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimpleAlert/SimpleAlert.modulemap";
-				PRODUCT_NAME = SimpleAlert;
+				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
+				PRODUCT_NAME = NVActivityIndicatorView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E71724FA8AFE615619EE198AB0D9E3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2327AE7C111113F50564147F6E136AE /* Pods-WatsonWasteSorter.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatsonWasteSorter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatsonWasteSorter/Pods-WatsonWasteSorter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WatsonWasteSorter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -952,14 +1306,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
 		9F57F931A00E3B625FB68B47D4BC948E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F77BE757D485256B1987D41F8C0F744D /* CameraManager.xcconfig */;
+			baseConfigurationReference = 5A67253A7CC7F8B5207E1C62A9C92BD1 /* CameraManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1022,41 +1375,9 @@
 			};
 			name = Release;
 		};
-		AB94F0E46E5E135866BE3D3E9BF92E57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A51E8FAB99F023B75FBA07D670508E5 /* SimpleAlert.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SimpleAlert/SimpleAlert-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimpleAlert/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimpleAlert/SimpleAlert.modulemap";
-				PRODUCT_NAME = SimpleAlert;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		B0F5F1530D3F4E518BE2B1A52F98487A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4726A1F93B378EA56EAE69B4E6F09B6 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 144AF2CAC57A87C0DD6F13E873856C8D /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1119,7 +1440,7 @@
 		};
 		B8CA02655A4B738D82484691EE8CA58F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4726A1F93B378EA56EAE69B4E6F09B6 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 144AF2CAC57A87C0DD6F13E873856C8D /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1214,9 +1535,9 @@
 			};
 			name = Debug;
 		};
-		D5FA715D6AC58F06A57F3A3177B984AF /* Debug */ = {
+		F09237D73C39B5F737D92F8FF5783B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2327AE7C111113F50564147F6E136AE /* Pods-WatsonWasteSorter.debug.xcconfig */;
+			baseConfigurationReference = F6826D066B97D7AE71E11E6A38269506 /* SimpleAlert.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1227,21 +1548,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WatsonWasteSorter/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleAlert/SimpleAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleAlert/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WatsonWasteSorter/Pods-WatsonWasteSorter.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WatsonWasteSorter;
+				MODULEMAP_FILE = "Target Support Files/SimpleAlert/SimpleAlert.modulemap";
+				PRODUCT_NAME = SimpleAlert;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1251,6 +1569,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05717645F39CA52AF91863376E419C67 /* Build configuration list for PBXNativeTarget "Pods-WatsonWasteSorter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E71724FA8AFE615619EE198AB0D9E3F /* Debug */,
+				0B0A7F2F19148AD6B3C6B893A1753401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		160F1FCFB0776F8F53BECC26A743DDC8 /* Build configuration list for PBXNativeTarget "CameraManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1269,6 +1596,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		35DF108162D4FB76F4C98C08DEA245C3 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6828CF04FAE2FA63E19937489C58E2B1 /* Debug */,
+				23512CA2F944D060505C1DD1059A2212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1278,11 +1614,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A20B75450710A7A611528A409ED5FC5 /* Build configuration list for PBXNativeTarget "Pods-WatsonWasteSorter" */ = {
+		64220F7AC64B971298D22BDDD9853809 /* Build configuration list for PBXNativeTarget "SimpleAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5FA715D6AC58F06A57F3A3177B984AF /* Debug */,
-				2AA147E08BF8BAD40FE948B384628F85 /* Release */,
+				F09237D73C39B5F737D92F8FF5783B85 /* Debug */,
+				23896A4D4D61E587F4497AF738138C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1292,15 +1628,6 @@
 			buildConfigurations = (
 				CC3D5FBF331EDD93BE475A02D561A2EB /* Debug */,
 				CB7750C1099A6FE0E1B457B29ECD30F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E408AC6AB0B20E45713D743DA3F009D9 /* Build configuration list for PBXNativeTarget "SimpleAlert" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5D0FEF6B4CFF8281B6CAD65F85D7036A /* Debug */,
-				AB94F0E46E5E135866BE3D3E9BF92E57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

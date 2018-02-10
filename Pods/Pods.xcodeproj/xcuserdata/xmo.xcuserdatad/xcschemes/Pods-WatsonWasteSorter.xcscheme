@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0920"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "80BC80FA4F8CCF62FC4882B63DBD3777"
+               BlueprintIdentifier = "60D81846649B2B659D77BD7E654CFDF9"
                BuildableName = "Pods_WatsonWasteSorter.framework"
                BlueprintName = "Pods-WatsonWasteSorter"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "80BC80FA4F8CCF62FC4882B63DBD3777"
+            BlueprintIdentifier = "60D81846649B2B659D77BD7E654CFDF9"
             BuildableName = "Pods_WatsonWasteSorter.framework"
             BlueprintName = "Pods-WatsonWasteSorter"
             ReferencedContainer = "container:Pods.xcodeproj">

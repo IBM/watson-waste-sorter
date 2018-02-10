@@ -5,6 +5,7 @@ target 'WatsonWasteSorter' do
   pod 'Alamofire', '~> 4.6'
   pod 'CameraManager', '~> 4.0'
   pod 'SimpleAlert', '~> 3.0'
+  pod 'NVActivityIndicatorView'
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
