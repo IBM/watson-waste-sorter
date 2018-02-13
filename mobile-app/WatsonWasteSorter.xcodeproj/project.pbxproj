@@ -241,7 +241,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "IBM Inc.";
+				ORGANIZATIONNAME = XiaoguangMo;
 				TargetAttributes = {
 					AEED0FCE2022857E00A86A33 = {
 						CreatedOnToolsVersion = 9.2;
@@ -349,12 +349,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-WatsonWasteSorter/Pods-WatsonWasteSorter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CameraManager/CameraManager.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SimpleAlert/SimpleAlert.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CameraManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleAlert.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

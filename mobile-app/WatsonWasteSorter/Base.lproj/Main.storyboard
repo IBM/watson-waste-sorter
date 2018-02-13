@@ -20,7 +20,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8C-lw-9Gc">
                                 <rect key="frame" x="0.0" y="70" width="375" height="529"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGE-yh-rfM" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                        <rect key="frame" x="135" y="209" width="105" height="111"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="D2Y-zu-LQH"/>
+                                            <constraint firstAttribute="height" constant="111" id="d1F-bW-Ah4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mGE-yh-rfM" firstAttribute="centerY" secondItem="O8C-lw-9Gc" secondAttribute="centerY" id="5bc-ZS-Cnb"/>
+                                    <constraint firstItem="mGE-yh-rfM" firstAttribute="centerX" secondItem="O8C-lw-9Gc" secondAttribute="centerX" id="uaL-4e-eh8"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watson Waste Sorter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fG-UH-23b">
                                 <rect key="frame" x="0.0" y="35" width="375" height="21"/>
@@ -57,6 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="loadingView" destination="mGE-yh-rfM" id="QCf-b1-xnH"/>
                         <outlet property="main" destination="O8C-lw-9Gc" id="GaE-D2-7Qe"/>
                         <outlet property="shoot" destination="N98-1T-c1z" id="WAd-w0-bTd"/>
                     </connections>
