@@ -3,7 +3,7 @@
 //  Watson Waste Sorter
 //
 //  Created by XiaoguangMo on 12/4/17.
-//  Copyright © 2017 XiaoguangMo. All rights reserved.
+//  Copyright © 2017 IBM Inc. All rights reserved.
 //
 
 import UIKit
@@ -24,7 +24,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         cameraManager.addPreviewLayerToView(self.main)
         cameraManager.cameraOutputQuality = .medium
-        
+
     }
 
     @IBAction func takePhoto(_ sender: Any) {
@@ -62,7 +62,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                                     print("error with response status: \(status)")
                                 }
                             }
-                            
+
 //                            debugPrint(response)
 //                            print(response.description)
                         }
@@ -73,7 +73,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             )
         })
     }
-    
+
     func showAlert(text:String, conf:Int) {
         var res = text
         if res == "Image is either not a waste or it's too blurry, please try it again."{
@@ -104,13 +104,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         default:
             action.button.setTitleColor(UIColor.blue, for: .normal)
         }
-        
+
 
         self.loadingView.stopAnimating()
         self.present(alert, animated: true, completion: nil)
     }
     // MARK: - UIImagePickerControllerDelegate Methods
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -118,4 +118,3 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
 
 }
-
