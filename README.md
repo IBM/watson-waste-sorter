@@ -121,7 +121,7 @@ Now, connect your IOS device to your machine and select your device in Xcode. Cl
 Congratulations, at this point you should have a mobile app that can classify waste using your camera. Now you can just simply point your camera to any waste
 and click the camera icon to take a picture. Then the application should tell you where the waste should go like this.
 
-![screenshot](docs/screenshot.jpg)
+![screenshot](docs/screenshot.png)
 
 Now you should have a better idea on how to sort your trash. Note that if you have a result that said `unclassified`, it means your image is either too blurry or the
 waste is too far. In that case just simply point your camera closer and retake a new picture.
