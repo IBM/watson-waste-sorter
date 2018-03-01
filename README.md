@@ -51,7 +51,13 @@ and deploy your mobile application.
 
 ## 1. Create your custom visual recognition model
 
-First, we need to login to the Cloud Foundry CLI.
+First, we need to clone this repository
+```shell
+git clone https://github.com/IBM/watson-waste-sorter
+cd watson-waste-sorter
+```
+
+Then, we need to login to the Cloud Foundry CLI.
 ```shell
 cf login -a https://api.ng.bluemix.net # Please use a different API endpoint if your IBM Cloud account is not in US-South
 ```
