@@ -85,7 +85,7 @@ Click `Create` after you uploaded all the files to the corresponding class. Now 
 After you provision the Visual Recognition service, run the following command to create your Visual Recognition API KEY
 ```shell
 cf create-service-key visual-recognition-wws waste-sorter
-API_KEY=$(cf service-key visual-recognition-wws waste-sorter --guid | tr -d "-")
+API_KEY=$(cf service-key visual-recognition-wws waste-sorter | awk ' /api_key/ {print $2;exit}' | tr -d "\",")
 ```
 
 Now go to the server directory. Let's create our custom model using the sample zipped image files we have under `server/resources`
@@ -95,6 +95,14 @@ echo $API_KEY # Make sure your API_KEY is not empty
 curl -X POST -F "Landfill_positive_examples=@resources/landfill.zip" -F "Recycle_positive_examples=@resources/recycle.zip" -F "Compost_positive_examples=@resources/compost.zip" -F "negative_examples=@resources/negative.zip" -F "name=waste" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers?api_key=$API_KEY&version=2016-05-20"
 ```
 
+You can run the following commands to check your model status.
+```shell
+# This command will retrieve all your custom models
+curl -X GET "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers?api_key={$API_KEY}&version=2016-05-20"
+
+# Replace <classifier_id> with the model classifier_id to view its status
+curl -X GET "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers/<classifier_id>?api_key={$API_KEY}&version=2016-05-20"
+```
 
 ## 2. Deploy the server application
 
