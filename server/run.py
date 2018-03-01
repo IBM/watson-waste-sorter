@@ -21,8 +21,29 @@ def set_classifier():
     visual_recognition = VisualRecognitionV3('2016-05-20', api_key=apikey)
     classifiers = visual_recognition.list_classifiers()
     for classifier in classifiers['classifiers']:
-        if classifier['name'] == 'waste' and classifier['status'] == 'ready':
-            return classifier['classifier_id']
+        if classifier['name'] == 'waste':
+            if classifier['status'] == 'ready':
+                return classifier['classifier_id']
+            else:
+                return ''
+    create_classifier()
+    return ''
+
+
+# Create custom waste classifier
+def create_classifier():
+    visual_recognition = VisualRecognitionV3('2016-05-20', api_key=apikey)
+    with open('./resources/landfill.zip', 'rb') as landfill, open(
+        './resources/recycle.zip', 'rb') as recycle, open(
+            './resources/compost.zip', 'rb') as compost, open(
+                './resources/negative.zip', 'rb') as negative:
+        visual_recognition.create_classifier(
+            'waste',
+            Landfill_positive_examples=landfill,
+            Recycle_positive_examples=recycle,
+            Compost_positive_examples=compost,
+            negative_examples=negative)
+    return ''
 
 
 # API destination
@@ -72,5 +93,6 @@ if __name__ == "__main__":
     visual_creds = watson_service.load_from_vcap_services(
         'watson_vision_combined')
     apikey = visual_creds['api_key']
+    classifier_id = set_classifier()
     metrics_tracker_client.track()
     app.run(host='0.0.0.0', port=int(port))
