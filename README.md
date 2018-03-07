@@ -28,6 +28,10 @@ When the reader has completed this Code Pattern, they will understand how to:
 * Mobile: Systems of engagement are increasingly using mobile technology as the platform for delivery.
 * [Flask](http://flask.pocoo.org/): A micro web development framework for Python.
 
+# Watch the Video
+[![](https://i.ytimg.com/vi/0yWE8eClrxU/hqdefault.jpg
+)](https://youtu.be/0yWE8eClrxU)
+
 # Prerequisite
 
 Create an [IBM Cloud account](https://console.bluemix.net/registration/) and install the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) on your machine.
@@ -167,6 +171,18 @@ This data is collected from the `setup.py` and `repository.yaml` file in the sam
 ## Disabling Deployment Tracking
 
 To disable tracking, simply remove ``metrics_tracker_client.track()`` from the ``run.py`` file in the server directory.
+
+# Links
+* [Demo on Youtube](https://youtu.be/0yWE8eClrxU)
+* [Use Watson Visual Recognition with Android](https://github.com/IBM/watson-vehicle-damage-analyzer)
+* [Sample code: Recognize and identify faces in an image with the Watson Visual Recognition service.](http://www.ibm.com/developerworks/java/library/cc-sample-code-facial-recognition-watson-node/index.html)
+* [Best practices for using custom classifiers in Watson Visual Recognition](http://www.ibm.com/developerworks/library/cc-build-with-watson-tips-best-practices-custom-classifiers-visual-recognition/index.html)
+
+# Learn more
+
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
+* **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 
 # License
 
