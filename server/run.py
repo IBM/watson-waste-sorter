@@ -4,7 +4,6 @@ import logging
 from flask import Flask, request
 from watson_developer_cloud import VisualRecognitionV3
 from watson_developer_cloud import watson_service
-import metrics_tracker_client
 
 app = Flask(__name__, static_url_path='')
 app.config['PROPAGATE_EXCEPTIONS'] = True
@@ -94,5 +93,4 @@ if __name__ == "__main__":
         'watson_vision_combined')
     apikey = visual_creds['api_key']
     classifier_id = set_classifier()
-    metrics_tracker_client.track()
     app.run(host='0.0.0.0', port=int(port))
