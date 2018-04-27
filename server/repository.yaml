@@ -1,8 +1,0 @@
-id: https://github.com/IBM/watson-waste-sorter
-runtimes: 
-  - Cloud Foundry
-services: 
-  - Visual Recognition
-event_id: web
-event_organizer: dev-journeys
-language: python
