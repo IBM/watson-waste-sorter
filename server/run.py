@@ -17,7 +17,7 @@ classifier_id = ''
 
 # Set Classifier ID
 def set_classifier():
-    visual_recognition = VisualRecognitionV3('2016-05-20', api_key=apikey)
+    visual_recognition = VisualRecognitionV3('2018-03-19', iam_api_key=apikey)
     classifiers = visual_recognition.list_classifiers()
     for classifier in classifiers['classifiers']:
         if classifier['name'] == 'waste':
@@ -31,7 +31,7 @@ def set_classifier():
 
 # Create custom waste classifier
 def create_classifier():
-    visual_recognition = VisualRecognitionV3('2016-05-20', api_key=apikey)
+    visual_recognition = VisualRecognitionV3('2018-03-19', iam_api_key=apikey)
     with open('./resources/landfill.zip', 'rb') as landfill, open(
         './resources/recycle.zip', 'rb') as recycle, open(
             './resources/compost.zip', 'rb') as compost, open(
@@ -50,7 +50,8 @@ def create_classifier():
 def sort():
     try:
         images_file = request.files.get('images_file', '')
-        visual_recognition = VisualRecognitionV3('2016-05-20', api_key=apikey)
+        visual_recognition = VisualRecognitionV3('2018-03-19',
+                                                 iam_api_key=apikey)
         global classifier_id
         if classifier_id == '':
             classifier_id = set_classifier()
@@ -91,6 +92,6 @@ def default():
 if __name__ == "__main__":
     visual_creds = watson_service.load_from_vcap_services(
         'watson_vision_combined')
-    apikey = visual_creds['api_key']
+    apikey = visual_creds['apikey']
     classifier_id = set_classifier()
     app.run(host='0.0.0.0', port=int(port))
