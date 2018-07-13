@@ -68,7 +68,7 @@ cf login -a https://api.ng.bluemix.net # Please use a different API endpoint if 
 Next, provision a Free tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition)
 Service and name it `visual-recognition-wws`. You can provision it using the above link or the command below.
 ```shell
-cf create-service watson_vision_combined free visual-recognition-wws
+cf create-service watson_vision_combined lite visual-recognition-wws
 ```
 
 Then, either use the Visual Recognition [Web UI](#create-custom-model-via-web-ui) or [Command Line](#create-custom-model-via-command-line) to create your custom model.
@@ -88,7 +88,7 @@ Click `Create` after you uploaded all the files to the corresponding class. Now 
 After you provision the Visual Recognition service, run the following command to create your Visual Recognition API KEY
 ```shell
 cf create-service-key visual-recognition-wws waste-sorter
-API_KEY=$(cf service-key visual-recognition-wws waste-sorter | awk ' /api_key/ {print $2;exit}' | tr -d "\",")
+API_KEY=$(cf service-key visual-recognition-wws waste-sorter | awk ' /apikey/ {print $2;exit}' | tr -d "\",")
 ```
 
 Now go to the server directory. Let's create our custom model using the sample zipped image files we have under `server/resources`
