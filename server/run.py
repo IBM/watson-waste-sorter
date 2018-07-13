@@ -50,7 +50,8 @@ def create_classifier():
 def sort():
     try:
         images_file = request.files.get('images_file', '')
-        visual_recognition = VisualRecognitionV3('2018-03-19', iam_api_key=apikey)
+        visual_recognition = VisualRecognitionV3('2018-03-19',
+                                                 iam_api_key=apikey)
         global classifier_id
         if classifier_id == '':
             classifier_id = set_classifier()
