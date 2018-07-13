@@ -28,7 +28,7 @@ stages:
       #!/bin/bash
       cf create-service watson_vision_combined lite visual-recognition-wws
       pushd server
-      ./custom-model.sh
+      # ./custom-model.sh
       cf push "${CF_APP}"
       popd
       # View logs

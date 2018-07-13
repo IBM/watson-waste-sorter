@@ -36,14 +36,14 @@ When the reader has completed this Code Pattern, they will understand how to:
 Create an [IBM Cloud account](https://console.bluemix.net/registration/) and install the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) on your machine.
 
 # Steps
-1. [Create your custom visual recognition model](#1-create-your-custom-visual-recognition-model)
+1. [Create your visual recognition service](#1-create-your-visual-recognition-service)
 2. [Deploy the server application](#2-deploy-the-server-application)
 3. [Create the mobile application and connect it to the server](#3-create-the-mobile-application-and-connect-it-to-the-server)
 4. [Using the Waste Sorter mobile application](#4-using-the-waste-sorter-mobile-application)
 
 ## Deploy the Server Application to IBM Cloud
 
-You can either go through [Step 1 and 2](#1-create-your-custom-visual-recognition-model) to create your application server, or
+You can either go through [Step 1 and 2](#1-create-your-visual-recognition-service) to create your application server, or
 
 You can simply click the `Deploy to IBM Cloud` button and `Create` the toolchain to provision, train, and run your visual recognition server.
 Then, go to the [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps/) to verify your server is running and take note of your
@@ -52,7 +52,7 @@ and deploy your mobile application.
 
 [![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/watson-waste-sorter)
 
-## 1. Create your custom visual recognition model
+## 1. Create your visual recognition service
 
 First, we need to clone this repository
 ```shell
@@ -65,13 +65,14 @@ Then, we need to login to the Cloud Foundry CLI.
 cf login -a https://api.ng.bluemix.net # Please use a different API endpoint if your IBM Cloud account is not in US-South
 ```
 
-Next, provision a Free tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition)
+Next, provision a Lite tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition)
 Service and name it `visual-recognition-wws`. You can provision it using the above link or the command below.
 ```shell
 cf create-service watson_vision_combined lite visual-recognition-wws
 ```
 
-Then, either use the Visual Recognition [Web UI](#create-custom-model-via-web-ui) or [Command Line](#create-custom-model-via-command-line) to create your custom model.
+
+<!-- Then, either use the Visual Recognition [Web UI](#create-custom-model-via-web-ui) or [Command Line](#create-custom-model-via-command-line) to create your custom model.
 
 ### Create custom model via Web UI
 
@@ -105,16 +106,17 @@ curl -X GET "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/clas
 
 # Replace <classifier_id> with the model classifier_id to view its status
 curl -X GET "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers/<classifier_id>?api_key={$API_KEY}&version=2016-05-20"
-```
+``` -->
 
 ## 2. Deploy the server application
 
-Now in the server repository, push your server application to Cloud Foundry
+Now go to the server repository, push your server application to Cloud Foundry
 ```
+cd server
 cf push
 ```
 
-Once the deployment succeeds, your backend server will be running in the cloud and be able to classify the different kinds of waste once the model finishes training. Please take note of your server application's endpoint as you will need it in the next step. Now let's go ahead and create our mobile app to use this classifier.
+Once the deployment succeeds, your backend server will create the custom model and be able to classify the different kinds of waste once the model finishes training. Please take note of your server application's endpoint as you will need it in the next step. Now let's go ahead and create our mobile app to use this classifier.
 
 ## 3. Create the mobile application and connect it to the server
 
