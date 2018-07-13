@@ -17,7 +17,7 @@ classifier_id = ''
 
 # Set Classifier ID
 def set_classifier():
-    visual_recognition = VisualRecognitionV3('2016-05-20', api_key=apikey)
+    visual_recognition = VisualRecognitionV3('2018-03-19', api_key=apikey)
     classifiers = visual_recognition.list_classifiers()
     for classifier in classifiers['classifiers']:
         if classifier['name'] == 'waste':
@@ -91,6 +91,6 @@ def default():
 if __name__ == "__main__":
     visual_creds = watson_service.load_from_vcap_services(
         'watson_vision_combined')
-    apikey = visual_creds['api_key']
+    apikey = visual_creds['apikey']
     classifier_id = set_classifier()
     app.run(host='0.0.0.0', port=int(port))
