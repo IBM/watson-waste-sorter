@@ -18,7 +18,7 @@ classifier_id = ''
 # Set Classifier ID
 def set_classifier():
     visual_recognition = VisualRecognitionV3('2018-03-19', iam_apikey=apikey)
-    classifiers = visual_recognition.list_classifiers()
+    classifiers = visual_recognition.list_classifiers().get_result()
     for classifier in classifiers['classifiers']:
         if classifier['name'] == 'waste':
             if classifier['status'] == 'ready':
@@ -61,7 +61,7 @@ def sort():
                         "confident score": 0})
         parameters = json.dumps({'classifier_ids': [classifier_id]})
         url_result = visual_recognition.classify(images_file=images_file,
-                                                 parameters=parameters)
+                                                 parameters=parameters).get_result()
         if len(url_result["images"][0]["classifiers"]) < 1:
             return json.dumps(
                     {"status code": 500, "result": "Image is either not "
