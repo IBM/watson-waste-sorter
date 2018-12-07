@@ -61,7 +61,7 @@ def sort():
                         "confident score": 0})
         parameters = json.dumps({'classifier_ids': [classifier_id]})
         url_result = visual_recognition.classify(images_file=images_file,
-                                                 parameters=parameters).get_result()
+                                         parameters=parameters).get_result()
         if len(url_result["images"][0]["classifiers"]) < 1:
             return json.dumps(
                     {"status code": 500, "result": "Image is either not "
