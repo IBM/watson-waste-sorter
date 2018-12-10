@@ -17,8 +17,8 @@ classifier_id = ''
 
 # Set Classifier ID
 def set_classifier():
-    visual_recognition = VisualRecognitionV3('2018-03-19', iam_api_key=apikey)
-    classifiers = visual_recognition.list_classifiers()
+    visual_recognition = VisualRecognitionV3('2018-03-19', iam_apikey=apikey)
+    classifiers = visual_recognition.list_classifiers().get_result()
     for classifier in classifiers['classifiers']:
         if classifier['name'] == 'waste':
             if classifier['status'] == 'ready':
@@ -31,7 +31,7 @@ def set_classifier():
 
 # Create custom waste classifier
 def create_classifier():
-    visual_recognition = VisualRecognitionV3('2018-03-19', iam_api_key=apikey)
+    visual_recognition = VisualRecognitionV3('2018-03-19', iam_apikey=apikey)
     with open('./resources/landfill.zip', 'rb') as landfill, open(
         './resources/recycle.zip', 'rb') as recycle, open(
             './resources/compost.zip', 'rb') as compost, open(
@@ -51,7 +51,7 @@ def sort():
     try:
         images_file = request.files.get('images_file', '')
         visual_recognition = VisualRecognitionV3('2018-03-19',
-                                                 iam_api_key=apikey)
+                                                 iam_apikey=apikey)
         global classifier_id
         if classifier_id == '':
             classifier_id = set_classifier()
@@ -60,8 +60,9 @@ def sort():
                     {"status code": 500, "result": "Classifier not ready",
                         "confident score": 0})
         parameters = json.dumps({'classifier_ids': [classifier_id]})
-        url_result = visual_recognition.classify(images_file=images_file,
-                                                 parameters=parameters)
+        url_result = visual_recognition.classify(
+                         images_file=images_file,
+                         parameters=parameters).get_result()
         if len(url_result["images"][0]["classifiers"]) < 1:
             return json.dumps(
                     {"status code": 500, "result": "Image is either not "

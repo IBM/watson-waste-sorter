@@ -53,7 +53,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                                         let JSON = result as! NSDictionary
                                         print(JSON)
                                         if let res = JSON["result"] as? String {
-                                            if let confs = JSON["confident score"] as? Float {
+                                            if let confs = JSON["confident score"] as? Double {
                                                 self.showAlert(text: res, conf:Int(confs * 100))
                                             }
                                         }
