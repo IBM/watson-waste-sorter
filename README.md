@@ -33,7 +33,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 # Prerequisite
 
-Create an [IBM Cloud account](https://console.bluemix.net/registration/) and install the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) on your machine.
+Create an [IBM Cloud account](https://cloud.ibm.com/registration/) and install the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) on your machine.
 
 # Steps
 1. [Create your visual recognition service](#1-create-your-visual-recognition-service)
@@ -46,11 +46,11 @@ Create an [IBM Cloud account](https://console.bluemix.net/registration/) and ins
 You can either go through [Step 1 and 2](#1-create-your-visual-recognition-service) to create your application server, or
 
 You can simply click the `Deploy to IBM Cloud` button and `Create` the toolchain to provision, train, and run your visual recognition server.
-Then, go to the [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps/) to verify your server is running and take note of your
+Then, go to the [IBM Cloud Dashboard](https://cloud.ibm.com/dashboard/apps/) to verify your server is running and take note of your
 server application's endpoint. Once you done that, you can move on to [Step 3](#3-create-the-mobile-application-and-connect-it-to-the-server)
 and deploy your mobile application.
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/watson-waste-sorter)
+[![Deploy to IBM Cloud](https://cloud.ibm.com/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy/?repository=https://github.com/IBM/watson-waste-sorter)
 
 ## 1. Create your visual recognition service
 
@@ -65,7 +65,7 @@ Then, we need to login to the Cloud Foundry CLI.
 cf login -a https://api.ng.bluemix.net # Please use a different API endpoint if your IBM Cloud account is not in US-South
 ```
 
-Next, provision a Lite tier [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition)
+Next, provision a Lite tier [Visual Recognition](https://cloud.ibm.com/catalog/services/visual-recognition)
 Service and name it `visual-recognition-wws`. You can provision it using the above link or the command below.
 ```shell
 cf create-service watson_vision_combined lite visual-recognition-wws
@@ -111,7 +111,7 @@ waste is too far. In that case just simply point your camera closer and retake a
 
 # Troubleshooting
 
-* To clean up, simply delete your mobile app. Then you can delete your server application via the [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps/).
+* To clean up, simply delete your mobile app. Then you can delete your server application via the [IBM Cloud Dashboard](https://cloud.ibm.com/dashboard/apps/).
 
 # Links
 * [Demo on Youtube](https://youtu.be/0yWE8eClrxU)
