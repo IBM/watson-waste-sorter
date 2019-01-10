@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/IBM/watson-waste-sorter.svg?branch=master)](https://travis-ci.org/IBM/watson-waste-sorter)
+[![Build Status](https://api.travis-ci.org/IBM/watson-waste-sorter.svg?branch=master)](https://travis-ci.org/IBM/watson-waste-sorter)
 
 # Create a custom Visual Recognition classifier for sorting waste
 
@@ -28,8 +28,8 @@ When the reader has completed this Code Pattern, they will understand how to:
 * [Flask](http://flask.pocoo.org/): A micro web development framework for Python.
 
 # Watch the Video
-[![](https://i.ytimg.com/vi/0yWE8eClrxU/hqdefault.jpg
-)](https://youtu.be/0yWE8eClrxU)
+
+[![](https://i.ytimg.com/vi/0yWE8eClrxU/hqdefault.jpg)](https://youtu.be/0yWE8eClrxU)
 
 # Prerequisite
 
@@ -50,7 +50,7 @@ Then, go to the [IBM Cloud Dashboard](https://cloud.ibm.com/dashboard/apps/) to 
 server application's endpoint. Once you done that, you can move on to [Step 3](#3-create-the-mobile-application-and-connect-it-to-the-server)
 and deploy your mobile application.
 
-[![Deploy to IBM Cloud](https://cloud.ibm.com/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy/?repository=https://github.com/IBM/watson-waste-sorter)
+[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy/?repository=https://github.com/IBM/watson-waste-sorter)
 
 ## 1. Create your visual recognition service
 
@@ -116,17 +116,17 @@ waste is too far. In that case just simply point your camera closer and retake a
 # Links
 * [Demo on Youtube](https://youtu.be/0yWE8eClrxU)
 * [Use Watson Visual Recognition with Android](https://github.com/IBM/watson-vehicle-damage-analyzer)
-* [Sample code: Recognize and identify faces in an image with the Watson Visual Recognition service.](http://www.ibm.com/developerworks/java/library/cc-sample-code-facial-recognition-watson-node/index.html)
-* [Best practices for using custom classifiers in Watson Visual Recognition](http://www.ibm.com/developerworks/library/cc-build-with-watson-tips-best-practices-custom-classifiers-visual-recognition/index.html)
+* [Sample code: Recognize and identify faces in an image with the Watson Visual Recognition service.](https://www.ibm.com/developerworks/java/library/cc-sample-code-facial-recognition-watson-node/index.html)
+* [Best practices for using custom classifiers in Watson Visual Recognition](https://developer.ibm.com/articles/cc-build-with-watson-tips-best-practices-custom-classifiers-visual-recognition/)
 
 # Learn more
 
-* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/technologies/artificial-intelligence/).
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 
 # License
 
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
