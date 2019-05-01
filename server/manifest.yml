@@ -1,6 +1,6 @@
 ---
 declared-services:
-  visual-recognition-wws:
+  wws-visual-recognition:
     label: watson_vision_combined
     plan: lite
 applications:
@@ -12,4 +12,4 @@ applications:
   random-route: true
   instances: 1
   services:
-  - visual-recognition-wws
+  - wws-visual-recognition
