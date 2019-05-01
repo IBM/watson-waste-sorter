@@ -26,7 +26,7 @@ stages:
       application: ${CF_APP}
     script: |-
       #!/bin/bash
-      cf create-service watson_vision_combined lite visual-recognition-wws
+      cf create-service watson_vision_combined lite wws-visual-recognition
       pushd server
       cf push "${CF_APP}"
       popd
