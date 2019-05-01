@@ -66,9 +66,9 @@ cf login -a https://api.ng.bluemix.net # Please use a different API endpoint if 
 ```
 
 Next, provision a Lite tier [Visual Recognition](https://cloud.ibm.com/catalog/services/visual-recognition)
-Service and name it `visual-recognition-wws`. You can provision it using the above link or the command below.
+Service and name it `wws-visual-recognition`. You can provision it using the above link or the command below.
 ```shell
-cf create-service watson_vision_combined lite visual-recognition-wws
+cf create-service watson_vision_combined lite wws-visual-recognition
 ```
 
 ## 2. Deploy the server application
