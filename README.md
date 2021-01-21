@@ -2,6 +2,10 @@
 
 # Create a custom Visual Recognition classifier for sorting waste
 
+## WARNING: This repository is no longer maintained. 
+
+This repository will not be updated. The repository will be kept available in read-only mode.
+
 In this developer code pattern, we will create a mobile app, Python Server with Flask, and Watson Visual Recognition. This mobile app sends pictures of waste and garbage to be analyzed by a server app, using Watson Visual Recognition. The server application will use pictures of common trash to train Watson Visual Recognition to identify various categories of waste, e.g. recycle, compost, or landfill. A developer can leverage this to create their own custom Visual Recognition classifiers for their use cases.
 
 When the reader has completed this Code Pattern, they will understand how to:
